@@ -1,41 +1,40 @@
 /** == ORANGE AND TAN Color Palette
 <palette>
-  <color name="Outer Space Crayola" hex="092d34" r="9" g="45" b="52" />
-  <color name="Orange Peel" hex="ffa62b" r="255" g="166" b="43" />
-  <color name="Cultured" hex="f7f4f3" r="247" g="244" b="243" />
-  <color name="Middle Blue" hex="82c0cc" r="130" g="192" b="204" />
-  <color name="Teal Blue" hex="347383" r="52" g="115" b="131" />
+  <color name="Pine Tree" hex="313628" r="49" g="54" b="40" />
+  <color name="Laurel Green" hex="a6ae98" r="166" g="174" b="152" />
+  <color name="Beige" hex="eef5e0" r="238" g="245" b="224" />
+  <color name="Middle Grey" hex="979187" r="151" g="145" b="135" />
+  <color name="Dark Liver" hex="544f53" r="84" g="79" b="83" />
 </palette>
-
 <!-- Coolors Palette Widget -->
       <script src="https://coolors.co/palette-widget/widget.js"></script>
-      <script data-id="036597300461979865">new CoolorsPaletteWidget("036597300461979865", ["092d34","ffa62b","f7f4f3","82c0cc","347383"]); </script>
+      <script data-id="03768526682767458">new CoolorsPaletteWidget("03768526682767458", ["313628","a6ae98","eef5e0","979187","544f53"]); </script>
 **/
 
 /* SCSS HEX */
-$outer-space-crayola: #092d34;
-$orange-peel: #ffa62b;
-$cultured: #f7f4f3;
-$middle-blue: #82c0cc;
-$teal-blue: #347383;
+$pine-tree: #313628;
+$laurel-green: #a6ae98;
+$beige: #eef5e0;
+$middle-grey: #979187;
+$dark-liver: #544f53;
 
 /** main color scheme **/
-$main-text-color: $outer-space-crayola;
-$main-bg: $cultured;
-$main-link: $orange-peel;
-$main-link-hover: $teal-blue;
-$main-headers: $orange-peel;
+$main-text-color: $pine-tree;
+$main-bg: $beige;
+$main-link: $laurel-green;
+$main-link-hover: $dark-liver;
+$main-headers: $laurel-green;
 
 /** dark-background color scheme **/
-$dark-text-color: $cultured;
-$dark-bg: $outer-space-crayola;
-$dark-link: $middle-blue;
-$dark-link-hover: $orange-peel;
-$dark-headers: $middle-blue;
+$dark-text-color: $beige;
+$dark-bg: $pine-tree;
+$dark-link: $middle-grey;
+$dark-link-hover: $laurel-green;
+$dark-headers: $middle-grey;
 
 /** accent-background color scheme **/
-$accent-text-color: $outer-space-crayola;
-$accent-bg: $middle-blue;
-$accent-link: $teal-blue;
-$accent-link-hover: $orange-peel;
-$accent-headers: $teal-blue;
+$accent-text-color: $pine-tree;
+$accent-bg: $middle-grey;
+$accent-link: $dark-liver;
+$accent-link-hover: $laurel-green;
+$accent-headers: $dark-liver;
