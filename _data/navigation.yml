@@ -1,0 +1,16 @@
+# Site navigation links
+
+- title: Home
+  url: /
+  excerpt:
+  image:
+
+- title: IDAH@IU.edu
+  url: https://idah.indiana.edu
+  excerpt:
+  image:
+
+- title: IDAH Repositories
+  url: /https://github.com/idahatiu/
+  excerpt:
+  image:

@@ -1,0 +1,35 @@
+<div data-sticky-container style="width: 100%">
+  <div data-sticky data-options="marginTop:0;" data-top-anchor="the-body:top" style="width: 100%">
+
+    <div class="title-bar darkbg" data-responsive-toggle="example-menu" data-hide-for="medium" style="width: 100%">
+      <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+      <div class="title-bar-title">{{ site.title }}</div>
+    </div>
+
+    <div class="top-bar darkbg" id="example-menu" style="width: 100%">
+      <ul class="vertical medium-horizontal dropdown menu menu-hover-lines" data-responsive-menu="accordion medium-dropdown">
+			<li class="darkbg home-nav-small">
+			  <a href="{{ site.baseurl }}/">
+				Home
+			  </a>
+			</li>
+			<li class="darkbg home-nav">
+			  <a href="{{ site.baseurl }}/">
+				Our Community
+			  </a>
+			</li>
+			<li class="darkbg{% if page.url == "/archives/"%} active{% endif %}">
+				<a href="{{ site.baseurl }}/archives">
+					Our Archives
+				</a>
+			</li>
+			<li class="darkbg{% if page.url == "/stories/"%} active{% endif %}">
+				<a href="{{ site.baseurl }}/stories">
+					Our Stories
+				</a>
+			</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
