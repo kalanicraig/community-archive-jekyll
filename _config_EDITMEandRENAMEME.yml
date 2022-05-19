@@ -1,0 +1,141 @@
+#####################
+# Do not use double quotes " in the community name or descriptions
+#####################
+#---------------------
+# THEME
+#---------------------
+#theme: community-archive
+title: "Community Archive"
+description: "A Github Pages example site"
+author: "Your community name here"
+
+#---------------------
+# ABOUT YOUR SITE
+#---------------------
+
+# Title of your website
+title: "Your community name here"
+
+# Title of your website
+subtitle: "An Archive of Our Community's Heirlooms"
+
+# Maximum of 150 characters for SEO-purposes.
+description: "A 150-word description of your community archive and its purpose here"
+
+# The credits show up in the includes/_footer.html
+# Main author of the website
+author: "YourCommunityName" #Do not include spaces in this
+authorname : "Your community name here"
+sitelogo: site_logo.jpg
+
+# Other community social media 
+email : youremail@domainname.com
+website : https://www.yourwebsite.com/ #This will probably be "yourcommunity.github.io" 
+twitter : yourtwitter
+github : yourgithub
+facebook : yourfacebook
+instagram : yourinstagram
+
+# Google Tracking
+google_analytics_tracking_id: 
+google_g4_analytics_id: 
+
+#---------------------
+# FONTS AND COLORS
+#---------------------
+# Choose the fonts you'd like to use. The line with the selected font should not have a "#" in front of it. The lines with other font choices should be commented out, or start with a "#"
+
+#fontchoice: quattrocento # A modern sans-serif font with classic serif accents
+#fontchoice: roboto # A clean san-serif font with simple serif accents
+#fontchoice: slab # A funky slab font with clean sans-serif accents
+fontchoice: source # A modern serif font with clean sans-serif accents
+
+# Choose the colors you'd like to use.
+
+#colorchoice: navy # Navy with bright teal and grey
+#colorchoice: brown # Tan browns and bright greens
+#colorchoice: orange # Deep browns with flame-bright orange
+#colorchoice: teal # Bright teal with bright orange-yellow accents
+colorchoice: dusk # Dusky purple and olive green
+
+#---------------------
+# DESCRIBING YOUR COLLECTION
+#---------------------
+# Some community archives use different words to describe their community members. We've included default language here, along with some suggestions.
+
+# The collection of items built by the community can have lots of different names. Options include: archive, community archive, collection, compilation
+vocabcollection: collection
+
+# Objects are the individual items that form a collection. Options include: item, object, heirloom, contribution
+vocabobject: object
+
+# A contributor is the person who contributed an object. Options include: person, contributor, community member, descendant
+vocabcontributor: contributor
+
+# A group helps organize individual contributors into related sections. Options include: group, family, related items
+vocabgroup: group
+
+#---------------------
+# ORGANIZING YOUR COLLECTION
+#---------------------
+# These collections take the basic files you put together for each item in your collection and auto-group and display them.
+collections:
+# This takes each item in your archive collection and displays it
+  items:
+    output: true
+    permalink: /:collection/:path:output_ext
+    itemcontributor: true
+    itemgroupid: true
+    itemgroupname: true
+    itemid: true
+    itemnarrative: true
+# If your collection items need to be grouped by person, family or some other group, uncomment this collection
+#  groups:
+#    output: true
+#    permalink: /:collection/:path:output_ext
+#    name: true
+#    folder: true
+#    sort_by: folder
+# If you have oral histories that go with groups, uncomment this collection:
+#  oralhistories:
+#    output: true
+#    permalink: /:collection/:path:output_ext
+#    name: true
+#    folder: true
+#    sort_by: folder
+
+#---------------------
+# NERDY WEBSITE ORGANIZATION STUFF
+#---------------------
+# MOST OF THESE THINGS DONT' NEED TO BE CHANGED.
+# This URL is the main address for absolute links. Don't include a slash at the end.
+# If you're installing this inside another site, use the baseurl to add a folder name.
+url: ''
+baseurl: ''
+
+# This URL points directly to the images directory making
+# things easier to link to images in posts and templates. It needs a slash at the end.
+#
+# Example: <img src="{{ site.url }}{{ site.baseurl }}{{ site.urlimg }}{{ post.image.title }}" />
+# Markdown-Example for posts ![Image Text]({{ site.url }}{{ site.baseurl }}{{ site.urlimg }}image.jpg)
+#
+urlimg: '/assets/img/'
+permalink:   /:categories/:title/
+
+year : 2022
+markdown : kramdown
+exclude :
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - pages/PagesOld
+    - INSTALL.md
+include: ['_pages']
+
+#plugins:
+#  - jekyll-seo-tag
+
+sass:
+  sass_dir: _sass
+  style: compressed
