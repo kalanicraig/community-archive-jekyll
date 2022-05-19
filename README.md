@@ -1,4 +1,4 @@
-# idahatiu.github.io
+# community-archive Jekyll theme
 
 This repository provides a web site template for communities in need of a free, easy-to-configure online exhibit.
 
