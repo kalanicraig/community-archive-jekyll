@@ -2,36 +2,36 @@
 # THEME
 #---------------------
 #theme: community-archive
-title: "IDAH@IU"
+title: "Community Archive"
 description: "A Github Pages example site"
-author: "the IDAH team at IUB"
+author: "Kalani Craig"
 
 #---------------------
 # ABOUT YOUR SITE
 #---------------------
 
 # Title of your website
-title: 'IDAH@IU'
+title: 'Community Archive'
 
 # Title of your website
-subtitle: 'Community Archiving Site'
+subtitle: 'An Archive of Our Community's Heirlooms'
 
 # Maximum of 150 characters for SEO-purposes.
-description: 'Community Archiving Site'
+description: 'Community Archive Jekyll Github Pages theme for communities with heirlooms, stories or other artifacts to save for historical purposes.'
 
 # The credits show up in the includes/_footer.html
 # Main author of the website
-author: IDAH@IU
-authorname : Institute for Digital Arts and Humanities
+author: KalaniCraig
+authorname : Kalani Craig
 sitelogo: site_logo.jpg
 
 # Other community social media 
-email : idah [at] iu.edu
-website : https://idah.indiana.edu/
-twitter : IDAH_IU
-github : idahatiu
-facebook : idahatiu
-instagram : 
+email : kalani [at] kalanicraig.com
+website : https://www.kalanicraig.com/
+twitter : kalanicrag
+github : kalanicraig
+facebook : 
+instagram : kalanicraig
 
 # Google Tracking
 google_analytics_tracking_id: 
@@ -42,17 +42,18 @@ google_g4_analytics_id:
 #---------------------
 # Choose the fonts you'd like to use. The line with the selected font should not have a "#" in front of it. The lines with other font choices should be commented out, or start with a "#"
 
-fontchoice: quattrocento # A modern sans-serif font with classic serif accents
+#fontchoice: quattrocento # A modern sans-serif font with classic serif accents
 #fontchoice: roboto # A clean san-serif font with simple serif accents
 #fontchoice: slab # A funky slab font with clean sans-serif accents
-#fontchoice: source # A modern serif font with clean sans-serif accents
+fontchoice: source # A modern serif font with clean sans-serif accents
 
 # Choose the colors you'd like to use.
 
-colorchoice: navy # Navy with bright teal and grey
+#colorchoice: navy # Navy with bright teal and grey
 #colorchoice: brown # Tan browns and bright greens
 #colorchoice: orange # Deep browns with flame-bright orange
 #colorchoice: teal # Bright teal with bright orange-yellow accents
+colorchoice: dusk # Dusky purple and olive green
 
 #---------------------
 # DESCRIBING YOUR COLLECTION
