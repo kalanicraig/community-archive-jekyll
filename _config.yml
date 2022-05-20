@@ -11,13 +11,13 @@ author: "Kalani Craig"
 #---------------------
 
 # Title of your website
-title: 'Community Archive'
+title: "Community Archive"
 
 # Title of your website
-subtitle: 'An Archive of Our Community's Heirlooms'
+subtitle: "An Archive of Our Community's Heirlooms"
 
 # Maximum of 150 characters for SEO-purposes.
-description: 'Community Archive Jekyll Github Pages theme for communities with heirlooms, stories or other artifacts to save for historical purposes.'
+description: "Community Archive Jekyll Github Pages theme for communities with heirlooms, stories or other artifacts to save for historical purposes."
 
 # The credits show up in the includes/_footer.html
 # Main author of the website
@@ -28,7 +28,7 @@ sitelogo: site_logo.jpg
 # Other community social media 
 email : kalani [at] kalanicraig.com
 website : https://www.kalanicraig.com/
-twitter : kalanicrag
+twitter : kalanicraig
 github : kalanicraig
 facebook : 
 instagram : kalanicraig
@@ -76,8 +76,8 @@ vocabgroup: group
 # ORGANIZING YOUR COLLECTION
 #---------------------
 # These collections take the basic files you put together for each item in your collection and auto-group and display them.
-collections:
 # This takes each item in your archive collection and displays it
+collections:
   items:
     output: true
     permalink: /:collection/:path:output_ext
@@ -108,7 +108,7 @@ collections:
 # This URL is the main address for absolute links. Don't include a slash at the end.
 # If you're installing this inside another site, use the baseurl to add a folder name.
 url: ''
-baseurl: ''
+baseurl: '/community-archive'
 
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash at the end.

@@ -4,10 +4,4 @@ layout: collection
 permalink: /archives
 ---
 
-{% include _itembox.html %}
-{% include _itembox.html %}
-{% include _itembox.html %}
-{% include _itembox.html %}
-{% include _itembox.html %}
-{% include _itembox.html %}
-{% include _itembox.html %}
+About this archive collection some text here blah blah blah

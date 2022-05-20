@@ -1,20 +1,21 @@
 ---
-layout: default
+layout: page
 format: collection
 ---
 
-<div class="teal" style="margin-top:-10px;">
-<div class="grid-container">
-<h4 class="center">{{ page.subheadline }}</h4>
-<h1 class="sans center">{{ page.title }}</h1>
-</div>
-</div>
+	<div class="large-12 cell">
+		<!--collection start-->
 
+		{{ content }}
 
+		<!--collection end-->
+	</div>
+</div>
 <div class="grid-container">
 	<div class="grid-x grid-padding-x grid-margin-x">
 
-			{{ content }}
+	{% include _itemlist.html %}
 
+		</div>
 	</div>
 </div>

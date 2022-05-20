@@ -330,6 +330,14 @@ Typographic & Design Elements
 		}
 	} 
 
+	.square {
+		@media print, screen and (min-width: 40em) {
+			width: 337px; /* width of container */
+			height: 337px; /* height of container */
+		}
+		object-fit: cover;
+	}
+
 /** == Stacked Table **/
 
 	tbody tr:nth-child(even) {

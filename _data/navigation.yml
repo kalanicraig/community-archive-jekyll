@@ -1,16 +1,16 @@
 # Site navigation links
 
-- title: Home
+- title: Our Community
   url: /
   excerpt:
   image:
 
-- title: IDAH@IU.edu
-  url: https://idah.indiana.edu
+- title: Our Archives
+  url: /archives
   excerpt:
   image:
 
-- title: IDAH Repositories
-  url: /https://github.com/idahatiu/
+- title: Our Stories
+  url: /stories
   excerpt:
   image:

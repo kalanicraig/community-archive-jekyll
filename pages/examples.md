@@ -1,7 +1,7 @@
 ---
-title: Our Stories
+title: Examples and Options
 layout: page
-permalink: /stories
+permalink: /examples
 ---
 
 

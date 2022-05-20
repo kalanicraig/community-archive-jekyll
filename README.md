@@ -8,3 +8,9 @@ Each item in the collection has an item ID (no spaces or punctuation) has one or
 
 - The `_items` folder contains one `.md` file for each item in the archive collection. These "markdown" files contain information in text form that distribute information to different folders/files in the community-archive theme, which auto-generate a web page for each individual item, drawing in photos and other info from the other file locations.
 - The `/assets/items/` folder contains images named for each item (e.g. `0001_01.jpg` and `0001_02.jpg` would display 2 photos for item 0001)
+
+
+<!-- community-archive theme (kalanicraig)
+community-archive-example (remote-themed to community-archive with minimal files/folders to start up, and heavy on the documentation)
+idahatiu fork of community-archive-example (fork? copied from?)
+-->

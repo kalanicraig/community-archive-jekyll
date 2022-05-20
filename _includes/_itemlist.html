@@ -1,0 +1,6 @@
+{% assign pages_list = docs %}
+{% for item in site.items %}
+{% comment %}{% raw %}{% if item.shortdesc != null %}{% endraw %}{% endcomment %}
+{% include _itembox.html %}
+{% comment %}{% raw %}{% endif %}{% endraw %}{% endcomment %}
+{% endfor %}

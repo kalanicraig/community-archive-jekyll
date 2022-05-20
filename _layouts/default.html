@@ -8,13 +8,15 @@
 
 {% include _header-and-nav.html %}
 
+<!--default start-->
 {{ content }}
+<!--default end-->
 
 {% include _footer.html %}
-    <script src="/js/vendor/jquery.js"></script>
-    <script src="/js/vendor/what-input.js"></script>
-    <script src="/js/vendor/foundation.js"></script>
-    <script src="/js/app.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/jquery.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/what-input.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/foundation.js"></script>
+    <script src="{{ site.baseurl }}/js/app.js"></script>
   </body>
 </html>
 

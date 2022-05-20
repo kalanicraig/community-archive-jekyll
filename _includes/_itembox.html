@@ -1,8 +1,22 @@
-<div class="cell small-12 medium-6 large-4 card">
-  <div class="card-thumbnail">
-    <a href="#"><img src="{{ site.baseurl }}{{ site.urlimg }}{{ site.sitelogo }}"/></a>
-  </div>
-  <h3 class="card-title subheadline"><a href="#">Title</a></h3>
-  <h4 class="card-contributor">Contributor</h4>
-  <p class="card-desc">Description</p>
+	{% if item.itemphoto %}
+		{% assign ItemPhotoResult = item.itemphoto %}
+	{% elsif item.itemid %}
+		{% capture ItemImagePath %}assets/items/{{ item.itemid }}{% endcapture %}
+		{% for static_file in site.static_files %}
+			{% if static_file.path contains ItemImagePath %}
+				{% capture ItemPhotoResult %}{{site.baseurl}}{{static_file.path}}{% endcapture %}
+			{% endif %}
+		{% endfor %}
+	{% endif %}
+
+	<div class="cell small-12 medium-6 large-4 card">
+	{% if ItemPhotoResult != empty %}
+	<div class="card-thumbnail">
+		<a href="{{ site.baseurl }}{{ item.url }}">
+		<img class="square" src="{{ ItemPhotoResult }}" alt="{{ page.title }}""/></a>
+	</div>
+	{% endif %}
+  <h3 class="card-title"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></h3>
+  {%if item.itemcontributor %}<h4 class="card-contributor">{{ item.itemcontributor }}</h4>{% endif %}
+  <p class="card-desc">{{ item.shortdesc | strip_html | truncatewords:30 }} (<a href="{{ site.baseurl }}{{ item.url }}">read more...</a>)</p>
 </div>
