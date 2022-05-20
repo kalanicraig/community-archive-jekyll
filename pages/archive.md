@@ -1,7 +1,7 @@
 ---
-title: Our Archives
+title: Our Collection
 layout: collection
-permalink: /archives
+permalink: /collection
 ---
 
-About this archive collection some text here blah blah blah
+{{site.description}}

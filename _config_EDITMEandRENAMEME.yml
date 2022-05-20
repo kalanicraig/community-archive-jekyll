@@ -1,56 +1,85 @@
-#####################
-# Do not use double quotes " in the community name or descriptions
-#####################
+# THEME. Leave Lines 1-3 alone.
 #---------------------
-# THEME
-#---------------------
-#theme: community-archive
-title: "Community Archive"
-description: "A Github Pages example site"
-author: "Your community name here"
+#remote-theme: community-archive
 
+##############################################
+# WHAT IS ALL THIS STUFF?
 #---------------------
+# _config is easy. Most web sites have configuration files.
+# .yml means YAML. It's the data that runs your site.
+# Some files, like this one, are entirely made up of YAML.
+# Lines with information that isn't YAML are commented out; the lines start with #
+# Those lines will be ignored by the computer but provide important information to you.
+#
+##############################################
+# WHAT DO I DO NOW?
+#---------------------
+# Look for the lines that have a bunch of ### in row.
+# These break _config.yml into sections.
+# You'll need to do something slightly different in each section.
+# If you see an instruction to "comment out", add a # to the beginning of the line(s).
+# If you see an instruction to "uncomment", remove the # at the beginning of the line(s).
+
+##############################################
+# THE MOST IMPORTANT THING TO REMEMBER
+#---------------------
+# Variables are the things that drive your site.
+# In YAML, there's a variable name--a placeholder--at the beginning of the line.
+# Variables have colons after them in YAML.
+# After the variable comes the actual contents of the variable, usually in double quotes
+#               title: "Your Site Title"
+# If you use another double quote inside your variable, it will break this config file.
+#               title: "My "So-Called" Website"
+#
+##############################################
+# START CUSTOMIZING YOUR SITE HERE
+##############################################
 # ABOUT YOUR SITE
 #---------------------
 
 # Title of your website
-title: "Your community name here"
+title: "Community Archive"
 
-# Title of your website
+# Subtitle of your website. Leave blank if you want to.
 subtitle: "An Archive of Our Community's Heirlooms"
 
-# Maximum of 150 characters for SEO-purposes.
-description: "A 150-word description of your community archive and its purpose here"
+# A longer description of your site (max 150 words). Helps search engines find you.
+description: "Community Archive Jekyll Github Pages theme for communities with heirlooms, stories or other artifacts to save for historical purposes."
 
-# The credits show up in the includes/_footer.html
-# Main author of the website
-author: "YourCommunityName" #Do not include spaces in this
-authorname : "Your community name here"
+# These credits show up in the includes/_footer.html
+# Main author of the website.
+author: KalaniCraig
+authorname : Kalani Craig
 sitelogo: site_logo.jpg
 
-# Other community social media 
-email : youremail@domainname.com
-website : https://www.yourwebsite.com/ #This will probably be "yourcommunity.github.io" 
-twitter : yourtwitter
-github : yourgithub
-facebook : yourfacebook
-instagram : yourinstagram
+# Other community social media. Leave blank if you don't have these.
+email : kalani [at] kalanicraig.com
+website : https://www.kalanicraig.com/
+twitter : kalanicraig
+github : kalanicraig
+facebook : 
+instagram : kalanicraig
 
-# Google Tracking
-google_analytics_tracking_id: 
+# If you need to know how many people visit your site, go to https://analytics.google.com/
+# When you finish the setup assistant, it will give you a Measurement ID: G-ABCDEFGHIJ
 google_g4_analytics_id: 
 
-#---------------------
+##############################################
 # FONTS AND COLORS
 #---------------------
-# Choose the fonts you'd like to use. The line with the selected font should not have a "#" in front of it. The lines with other font choices should be commented out, or start with a "#"
+
+# Choose the FONTS you'd like to use.
+# You can see these font choices in action at https://kalanicraig.com/community-archive/docs/
+# Uncomment the line for the font you like. Comment out all of the other lines.
 
 #fontchoice: quattrocento # A modern sans-serif font with classic serif accents
 #fontchoice: roboto # A clean san-serif font with simple serif accents
 #fontchoice: slab # A funky slab font with clean sans-serif accents
 fontchoice: source # A modern serif font with clean sans-serif accents
 
-# Choose the colors you'd like to use.
+# Choose the COLORS you'd like to use.
+# You can see these color choices in action at https://kalanicraig.com/community-archive/docs/
+# Uncomment the line for the color you like. Comment out all of the other lines.
 
 #colorchoice: navy # Navy with bright teal and grey
 #colorchoice: brown # Tan browns and bright greens
@@ -58,29 +87,12 @@ fontchoice: source # A modern serif font with clean sans-serif accents
 #colorchoice: teal # Bright teal with bright orange-yellow accents
 colorchoice: dusk # Dusky purple and olive green
 
-#---------------------
-# DESCRIBING YOUR COLLECTION
-#---------------------
-# Some community archives use different words to describe their community members. We've included default language here, along with some suggestions.
-
-# The collection of items built by the community can have lots of different names. Options include: archive, community archive, collection, compilation
-vocabcollection: collection
-
-# Objects are the individual items that form a collection. Options include: item, object, heirloom, contribution
-vocabobject: object
-
-# A contributor is the person who contributed an object. Options include: person, contributor, community member, descendant
-vocabcontributor: contributor
-
-# A group helps organize individual contributors into related sections. Options include: group, family, related items
-vocabgroup: group
-
-#---------------------
+##############################################
 # ORGANIZING YOUR COLLECTION
 #---------------------
 # These collections take the basic files you put together for each item in your collection and auto-group and display them.
-collections:
 # This takes each item in your archive collection and displays it
+collections:
   items:
     output: true
     permalink: /:collection/:path:output_ext
@@ -104,17 +116,19 @@ collections:
 #    folder: true
 #    sort_by: folder
 
+##############################################
+# WEBSITE ORGANIZATION
 #---------------------
-# NERDY WEBSITE ORGANIZATION STUFF
-#---------------------
-# MOST OF THESE THINGS DONT' NEED TO BE CHANGED.
-# This URL is the main address for absolute links. Don't include a slash at the end.
-# If you're installing this inside another site, use the baseurl to add a folder name.
-url: ''
-baseurl: ''
+# MOST OF THESE THINGS DON'T NEED TO BE CHANGED.
+##############################################
 
-# This URL points directly to the images directory making
-# things easier to link to images in posts and templates. It needs a slash at the end.
+
+# This URL is the main address for absolute links. This will usually be blank.
+url: ''
+# If this archive will be in a folder (kalanicraig.com/community-archive/) instead of in its own main site (idahatiu.github.io) add that folder name here. This will usually be blank.
+baseurl: '/community-archive'
+
+# This URL points directly to the images directory. It needs a slash at the end.
 #
 # Example: <img src="{{ site.url }}{{ site.baseurl }}{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.url }}{{ site.baseurl }}{{ site.urlimg }}image.jpg)

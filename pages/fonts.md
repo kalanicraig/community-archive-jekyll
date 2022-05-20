@@ -1,7 +1,7 @@
 ---
-title: Color Examples
+title: Font Examples
 layout: page
-permalink: /docs/colors
+permalink: /docs/fonts
 ---
 
 
