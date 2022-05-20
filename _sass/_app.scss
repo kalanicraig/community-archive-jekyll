@@ -349,47 +349,45 @@ Typographic & Design Elements
 		color: #0a0a0a;
 	}
 
-/** == Icons **/
+.pull-quote {
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  font-style: normal;
+  font-size: 1.125rem;
+  max-width: 50%;
+  line-height: 1.25em;
+  text-transform: uppercase;
+  color: $main-text-color;
+  float: right;
+  margin: 10px 0 0 20px;
+  background: linear-gradient($main-link-hover, $main-text-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-	@media screen {
-	a:after {
-		font-family: "Font Awesome 5 Free";
-		padding: 0 3px 0 3px;
-	}
-	}
+.pull-quote:before {
+  content: '';
+}
 
+.pull-quote:after {
+  content: '';
+}
 
-	a[data-info*="pdf"]:after {
-		content: "\f1c1";
-	}
+@media print, screen and (min-width: 40em) {
+  .pull-quote {
+    font-size: 1.875rem;
+    max-width: calc(50% - 5%);
+    margin-right: -15%;
+  }
+}
 
-	a[data-info*="url"]:after {
-		content: "\f0c1";
-	}
+@media print, screen and (min-width: 64em) {
+  .pull-quote {
+    max-width: calc(50% + 5%);
+    margin-right: -25%;
+  }
+}
 
-	a[data-info*="word"]:after {
-		content: "\f1c2";
-	}
-
-	a[data-info*="video"]:after {
-		content: "\f1c8";
-	}
-
-	a[data-info*="question"]:after {
-		content: "\f059";
-	}
-
-	a[data-info*="onpage"]:after {
-		content: "\f103";
-	}
-
-	a[data-info*="zip"]:after {
-		content: "\f1c6";
-	}
-
-	.fa-user-graduate {
-		padding-left: 2px;
-	}
 
 /** =================================
 ItemBox

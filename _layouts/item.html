@@ -5,8 +5,7 @@ format: item
 
 <div class="darkbg" style="margin-top:-10px;">
 <div class="grid-container">
-<h4 class="center">{{ page.subheadline }}</h4>
-<h1 class="sans center">{{ page.title }}</h1>
+<h1 class="sans center sticky">{{ page.title }}</h1>
 </div>
 </div>
 
@@ -15,8 +14,37 @@ format: item
 	<div class="grid-x grid-padding-x">
 		<div class="large-12 cell">
 			<!--page-->
-			{{ content }}
+
+{% if page.contributor %}## Object contributed by {{ page.contributor }}{% endif %}
+{% if page.teammember %}### Assistance by {{ page.teammember }}{% endif %}
+{% if page.creator %}### Originally created by {{ page.creator }}{% endif %}
+
+{% if page.url %}Find out more at {{ page.embedurl }}{% endif %}
+
+{% if page.format == "media" %}{{ page.embedurl }}{% endif %}
+
+{% if page.contributorquote %}<q class="pull-quote">"{{ page.contributorquote }}"</q>{% endif %}
+
+{{ content }}
+
 			<!--page-->
+
+{% assign sortedCategories = page.categories | sort %}{% for category in sortedCategories %}
+- {{ category }} (url = {{site.baseurl}}/groups#{{ category | replace: " ","-" }})
+{% endfor %}
+
+<div class="element-set">
+<h2 id="Dublin Core">Dublin Core</h2>
+<table class="stack">
+<tr><td><div id="dublin-core-title" class="element">Title</div></td><td>{%if page.url %}<a href="{{ page.itemurl }}" target="_blank">{% endif %}<div class="element-text">{{ page.title }}</div>{%if page.url %}</a>{% endif %}</td></tr>
+<tr><td><div id="dublin-core-description" class="element">Description</div></td><td><div class="element-text">{{ page.shortdesc }}</div></td></tr>
+<tr><td><div id="dublin-core-creator" class="element">Creator</div></td><td><div class="element-text">{{ page.creator }}</div></td></tr>
+<tr><td><div id="dublin-core-contributor" class="element">Contributor</div></td><td><div class="element-text">{{ page.contributor }}</div></td></tr>
+<tr><td><div id="dublin-core-date" class="element">Creation Date</div></td><td><div class="element-text">{{ page.creationdate }}</div></td></tr>
+</table>
+
+<!-- {: .my-class } -->  
+
 		</div>
 	</div>
 </div>
