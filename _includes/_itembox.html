@@ -1,7 +1,11 @@
+{% capture FileName %}{{ item.url | split: '/' | last }}{% endcapture %}
+{% capture ItemID %}{{ FileName | split: '.' | first }}{% endcapture %}
+
+
 	{% if item.itemphoto %}
-		{% assign ItemPhotoResult = item.itemphoto %}
-	{% elsif item.itemid %}
-		{% capture ItemImagePath %}assets/items/{{ item.itemid }}{% endcapture %}
+		{% assign ItemPhotoResult = item.photo %}
+	{% else %}
+		{% capture ItemImagePath %}assets/items/{{ ItemID }}{% endcapture %}
 		{% for static_file in site.static_files %}
 			{% if static_file.path contains ItemImagePath %}
 				{% capture ItemPhotoResult %}{{site.baseurl}}{{static_file.path}}{% endcapture %}
@@ -16,7 +20,7 @@
 		<img class="square" src="{{ ItemPhotoResult }}" alt="{{ page.title }}""/></a>
 	</div>
 	{% endif %}
-  <h3 class="card-title"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></h3>
-  {%if item.itemcontributor %}<h4 class="card-contributor">{{ item.itemcontributor }}</h4>{% endif %}
+  <h3 class="card-title accentbg"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></h3>
+  {%if item.contributor %}<h4 class="card-contributor">{{ item.contributor }}</h4>{% endif %}
   <p class="card-desc">{{ item.shortdesc | strip_html | truncatewords:30 }} (<a href="{{ site.baseurl }}{{ item.url }}">read more...</a>)</p>
 </div>

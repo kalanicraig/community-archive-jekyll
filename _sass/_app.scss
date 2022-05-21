@@ -115,7 +115,6 @@ Base settings
 	  h6, .h6 {
 		font-size: 1.15rem; }
 	}
-
 	@media screen and (max-width: 39.9375em) {
 	  h1, .h1 {
 		font-size: 2.75rem; }
@@ -318,51 +317,66 @@ Typographic & Design Elements
 	  text-transform: uppercase;
 	  border: 1px solid #cacaca;
 	}
-
+	
+	.card-title {
+	  padding: 10px 16px 10px 16px;
+	  margin-left:-16px;
+	  margin-right:-16px;
+	  line-height:1em;
+	}
 /** == Image Styling **/
 
-	.intextright {
-		clear: right;
-		@media print, screen and (min-width: 40em) {
-			width:50%;
-			float: right;
-			padding: 10px;
-		}
-	} 
-
 	.square {
-		@media print, screen and (min-width: 40em) {
-			width: 337px; /* width of container */
-			height: 337px; /* height of container */
-		}
 		object-fit: cover;
 	}
+
+	@media screen and (min-width: 63em) {
+	.square {
+		width: calc(100vw);
+		height: calc((100vw / 5 );
+	}
+	}
+	@media screen and (max-width: 62.9775em) {
+	.square {
+		width: calc(100vw);
+		height: calc((100vw / 2.5 );
+	}
+	}
+	@media screen and (max-width: 39.9775em) {
+	.square {
+		width: calc(100vw);
+		height: calc((100vw / 1.25);
+	}
+	}
+
 
 /** == Stacked Table **/
 
 	tbody tr:nth-child(even) {
 		border-bottom: 0;
-		background-color: #f6f6f4;
+		background-color: $main-bg;
+	}
+	tbody tr:nth-child(even) {
+		border-bottom: 0;
+		background-color: $main-bg;
 	}
 	thead {
-		background: #e4e4dd;
-		color: #0a0a0a;
+		background: $dark-bg;
+		color: $dark-text-color;
 	}
 
 .pull-quote {
   font-weight: 400;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.25px;
   font-style: normal;
   font-size: 1.125rem;
   max-width: 50%;
   line-height: 1.25em;
-  text-transform: uppercase;
   color: $main-text-color;
   float: right;
   margin: 10px 0 0 20px;
-  background: linear-gradient($main-link-hover, $main-text-color);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  border-left: 1px solid $main-link-hover;
+  padding-left: 10px;
 }
 
 .pull-quote:before {
@@ -376,15 +390,13 @@ Typographic & Design Elements
 @media print, screen and (min-width: 40em) {
   .pull-quote {
     font-size: 1.875rem;
-    max-width: calc(50% - 5%);
-    margin-right: -15%;
+    max-width: calc(50% - 15%);
   }
 }
 
 @media print, screen and (min-width: 64em) {
   .pull-quote {
     max-width: calc(50% + 5%);
-    margin-right: -25%;
   }
 }
 
