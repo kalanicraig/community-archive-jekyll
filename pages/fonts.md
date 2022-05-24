@@ -1,7 +1,7 @@
 ---
 title: Font Examples
 layout: page
-permalink: /docs/fonts
+permalink: /docs/fonts/
 ---
 
 

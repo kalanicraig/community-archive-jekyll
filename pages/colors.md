@@ -1,7 +1,7 @@
 ---
 title: Color Examples
 layout: page
-permalink: /docs/colors
+permalink: /docs/colors/
 ---
 
 

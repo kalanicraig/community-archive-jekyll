@@ -23,7 +23,7 @@ permalink: /docs
 - the minimal workflow may be too restrictive
 - no filtering or pagination for very long lists of items
 
-# Decisions before you start
+# Advance Prep
 {: .subheadline }
 
 See a sample collection at https://idahatiu.github.io/archives/
@@ -69,18 +69,81 @@ Team members are the folks who work with the community to help collect and post 
 # Item Listings
 {: .subheadline }
 
-YAML format options:
+## Item basics
 
-`layout: item
-format: photo`
+Each item should have its own unique filename.
+   - We like `YYYY-MM-DD-ItemNo` (so the 4th item collected on May 15, 2022, would be `2022-05-15-004`)
 
-- photo (includes photos of objects, scans of photos and documents)
-- media (includes audio, video)
-- outsidelink (includes social media posts, newspaper articles)
+Each item will have its own
+- information file in the `_items` folder (2022-05-15-004.md)
+- photo in the `/assets/items/` folder (2022-05-15-004.jpg or 2022-05-15-004.png).
 
+## Item metadata overview
+
+At the beginning of each item file is "metadata", or information about the item that helps control how it's displayed. Sometimes this metadat is the only information you'll need to put in.
+
+```
+---
+layout: item
+format: photo
+title: "Regenerative Archives: Power, Solidarity, and Affectivity in Community-University Partnerships"
+contributor: "Marisa Hicks-Alcaraz"
+group: "IXeM"
+creator: "Marisa Hicks-Alcaraz"
+author: 
+externalurl: https://scholarworks.iu.edu/dspace/handle/2022/27448
+embedurl: https://purl.dlib.indiana.edu/iudl/media/356910rh45?urlappend=%2Fembed
+creationdate: "March 21, 2022"
+type: 
+shortdesc: "A talk on the work of ImaginX en Movimiento (IXeM) and the “regenerative” praxis that aims to realize the emancipatory potential of archives by prioritizing community ownership, affectivity, and solidarity."
+contributorquote: "Our archives-focused mutual aid projects are in solidarity with record creators and keepers who wish to control their narratives on their own terms."
+categories: [ Video, Community Archiving ]
+tags: [  ]
+teammember: "Kalani Craig"
+---
+```
+
+### Metadata line by line
+
+Metadata starts and ends with a line that has three dashes and nothing else. (the dash next to the "zero" key on your keyboard). *If something goes wrong with an item, the first thing to check is to make sure there's no space after the three dashes.*
+
+- `layout: item`: This never changes
+- `format: photo`:  There are 3 item formats that you're likely to encounter
+	- photo (includes photos of objects, scans of photos and documents)
+	- media (includes embedded audio or video created by members of the community)
+	- outsidelink (includes social media posts, newspaper articles that need to be linked outside of the community-archive site)
+- `title: "Regenerative Archives: Power, Solidarity, and Affectivity in Community-University Partnerships"`: The title of the item
+- `contributor: "Marisa Hicks-Alcaraz"`: The person who contributed the item to the collection.
+- `group: "IXeM"`: The group this item is part of (a family, a group of contributors)
+- `creator: "Marisa Hicks-Alcaraz"`: The creator of the item (a brand, a person)
+- `author: `: This is often blank. It's used only if the item is a written/audio/video contribution and author and creator are different than the person who contributed the item.
+- `externalurl: https://scholarworks.iu.edu/dspace/handle/2022/27448`: If the item originated as an outside link or has a social-media link, put that link here
+- `embedurl: https://purl.dlib.indiana.edu/iudl/media/356910rh45?urlappend=%2Fembed`: If the item page should have an embedded video from YouTube or another video/audio link, put that link here
+- `creationdate: "March 21, 2022"`: When was the item created? Dates like "circa 1985" work well.
+- `type: `: If the community is using full metadata, this item type should be based on Library of Congress item types.
+- `shortdesc: "A talk on the work of ImaginX en Movimiento (IXeM) and the “regenerative” praxis that aims to realize the emancipatory potential of archives by prioritizing community ownership, affectivity, and solidarity."`: This is the short description that shows up on the all-items list page
+- `contributorquote: "Our archives-focused mutual aid projects are in solidarity with record creators and keepers who wish to control their narratives on their own terms."`: If there's a particularly great quote from the contributor, you can highlight that here.
+- `categories: [ Video, Community Archiving ]`: What categories is your community using to group items by type? Separate these by commas.
+- `tags: [  ]`: These are optional tags that can be less formal or controlled than the categories.
+- `teammember: "Kalani Craig"`: If a team-member did considerable work prepping an item or helping a contributor, they can be credited here.
+
+### Item images, video and audio
 
 # Formatting
 {: .subheadline }
+
+Most of the formatting for images is taken care of by the metadata (see above).
+
+To add additional text, add it below the second set of hyphens that mark the metadata at the beginning of each file.
+
+To format additional text, use markdown. We've provided [an example page]({{ site.baseurl }}/2022/05/15/a-sample-blog-post.html) and the [markdown that generates that page](https://github.com/kalanicraig/community-archive/blob/main/_posts/2022-05-15-a-sample-blog-post.md). Comparing these files side by side is the best way to learn how markdown "translates" to a web page.
+
+# Blog posts
+
+The kitchen-sink formatting sample is also [sample blog post]({{ site.baseurl }}/2022/05/15/a-sample-blog-post.html), which is linked from the site's main [blog-post list page](/blog). 
+
+If you'd prefer not to have a blog, but you want to keep the formatting-example post, edit the `_navigation.yml` file in your `_data` folder and remove the "Blog" entry.
+
 
 # Technical Guide
 {: .subheadline }

@@ -3,7 +3,7 @@ layout: default
 format: post
 ---
 
-<div class="darkbg" style="margin-top:-10px;">
+<div class="darkbg">
 <div class="grid-container">
 <h4 class="center">Community Updates</h4>
 <h1 class="sans center">{{page.title}}</h1>
@@ -14,51 +14,11 @@ format: post
 <div class="grid-container">
 	<div class="grid-x grid-padding-x">
 		<div class="large-12 cell">
-			<div class="simple-article-header">
-			  <!-- Article Published Date & Reading Time -->
-			  <p class="article-date-read">Published on: 21 April, 2017</p>
 
-			  <!-- Article Title -->
-			  <h4 class="article-title">
-				<a href="#">
-				  {{page.title}}
-				</a>
-			  </h4>
-
-			  <!-- Article Author Name & Comment Hyperlink -->
-			  <p class="article-author-comments">
-				<em>by <a href="#">{{page.author}}</a></em>
-			  </p>
-
-			  <!-- Article Social Links -->
-			  <div class="article-social">
-				<a href="https://www.facebook.com/sharer/sharer.php?u={{page.url}}&amp;src=sdkpreparse" class="button social facebook">
-				  <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
-				</a>
-				<a href="#" class="button social twitter">
-				  <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
-				</a>
-				<a href="#" class="button social linkedin">
-				  <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
-				</a>
-				<a href="#" class="button social google-plus">
-				  <i class="fa fa-google-plus fa-lg" aria-hidden="true"></i>
-				</a>
-			  </div>
-
-			  <!-- Article Image -->
-			  <div class="article-post-image">
-				<div class="thumbnail">
-				  <img src="{{page.image}}">
-				</div>
-			  </div>
-
-			  <!-- Article Post Content -->
-			  <div class="article-post-content">
-						<!--page start-->
-						{{ content }}
-						<!--page end-->
-			  </div>
+				  <img class="article-image float-right thumbnail" src="{{ site.baseurl }}{{ site.urlimg }}{{page.image}}">
+				<!--page start-->
+				{{ content }}
+				<!--page end-->
 			</div>
 		</div>
 	</div>
