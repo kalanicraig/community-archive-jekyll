@@ -10,12 +10,17 @@
   excerpt:
   image:
 
+- title: Blog
+  url: /blog
+  excerpt:
+  image:
+  
 - title: Theme Docs
   url: /docs
   excerpt:
   image:
   
-- title: Example Site
+- title: Example Collection
   url: https://idahatiu.github.io
   excerpt:
   image:
