@@ -2369,29 +2369,6 @@ cite, .cite-block {
   cite:before, .cite-block:before {
     content: "— "; }
 
-code, .code-inline {
-  border: 1px solid #cacaca;
-  background-color: #e6e6e6;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-weight: normal;
-  color: #0a0a0a;
-  display: inline;
-  max-width: 100%;
-  word-wrap: break-word;
-  padding: 0.125rem 0.3125rem 0.0625rem; }
-
-.code-block {
-  border: 1px solid #cacaca;
-  background-color: #e6e6e6;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-weight: normal;
-  color: #0a0a0a;
-  display: block;
-  overflow: auto;
-  white-space: pre;
-  padding: 1rem;
-  margin-bottom: 1.5rem; }
-
 .text-left {
   text-align: left; }
 

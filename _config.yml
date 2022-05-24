@@ -92,8 +92,8 @@ fontchoice: source # A modern serif font with clean sans-serif accents
 #colorchoice: teal # Bright teal with bright orange-yellow accents
 #colorchoice: marigold # Near-black with marigold yellow
 #colorchoice: red # Black, crimson and grey
-#colorchoice: lavenderred # Purple-grey with orange-red
-colorchoice: dusk # Dusky purple and olive green
+colorchoice: lavenderred # Purple-grey with orange-red
+#colorchoice: dusk # Dusky purple and olive green
 
 ##############################################
 # ORGANIZING YOUR COLLECTION
