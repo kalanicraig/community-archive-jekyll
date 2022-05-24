@@ -32,7 +32,7 @@ Nav Loop
 ================================================== -->
 {% for nav in site.data.navigation %}
 			<li class="darkbg{% if page.url == nav.url %} active{% endif %}">
-				<a href="{{ site.baseurl }}{{ nav.url }}">
+				{% if nav.url contains "http" %}<a href="{{ nav.url }}" target="_blank">{% else %}<a href="{{ site.baseurl }}{{ nav.url }}">{% endif %}
 					{{ nav.title }}<!--{{ page.url }} == {{ nav.url }}-->
 
 				</a>

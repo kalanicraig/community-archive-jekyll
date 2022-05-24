@@ -40,23 +40,23 @@
 #---------------------
 
 # Title of your website
-title: "Community Archive"
+title: "Community-Archive Jekyll Theme"
 
 # Subtitle of your website. Leave blank if you want to.
-subtitle: "An Archive of Our Community's Heirlooms"
+subtitle: "An easy-to-use Jekyll Theme for Github Pages"
 
 # A longer description of your site (max 150 words). Helps search engines find you.
 description: "Community Archive Jekyll Github Pages theme for communities with heirlooms, stories or other artifacts to save for historical purposes."
 
 # These credits show up in the includes/_footer.html
 # Main author of the website.
-author: KalaniCraig
-authorname : Kalani Craig
+author: "Kalani Craig"
+authorname : "Kalani Craig"
 sitelogo: site_logo.jpg
 
 # Other community social media. Leave blank if you don't have these.
-email : kalani [at] kalanicraig.com
-website : https://www.kalanicraig.com/
+email : "kalani [at] kalanicraig.com"
+website : "https://www.kalanicraig.com/"
 twitter : kalanicraig
 github : kalanicraig
 facebook : 
@@ -84,9 +84,12 @@ fontchoice: source # A modern serif font with clean sans-serif accents
 # Uncomment the line for the color you like. Comment out all of the other lines.
 
 #colorchoice: navy # Navy with bright teal and grey
-#colorchoice: brown # Tan browns and bright greens
-#colorchoice: orange # Deep browns with flame-bright orange
+#colorchoice: leafgreen # Leafy green and medium brown
+#colorchoice: tan # Tan and deep brown with flame-bright orange
 #colorchoice: teal # Bright teal with bright orange-yellow accents
+#colorchoice: marigold # Near-black with marigold yellow
+#colorchoice: red # Black, crimson and grey
+#colorchoice: lavenderred # Purple-grey with orange-red
 colorchoice: dusk # Dusky purple and olive green
 
 ##############################################
@@ -98,11 +101,9 @@ collections:
   items:
     output: true
     permalink: /:collection/:path:output_ext
-    itemcontributor: true
-    itemgroupid: true
-    itemgroupname: true
-    itemid: true
-    itemnarrative: true
+    contributor: true
+    creator: true
+    group: true
 # If your collection items need to be grouped by person, family or some other group, uncomment this collection
 #  groups:
 #    output: true
@@ -149,9 +150,9 @@ exclude :
     - INSTALL.md
 include: ['_pages']
 
-#plugins:
-#  - jekyll-seo-tag
-
 sass:
   sass_dir: _sass
   style: compressed
+
+plugins:
+  - jekyll-seo-tag

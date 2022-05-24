@@ -4,46 +4,70 @@ layout: page
 permalink: /docs
 ---
 
+# Table of Contents
+{: .subheadline }
 
-Who is it for (communities who need simple, no-database, archiving with minimal workflows)
-How do we use it (Github and cameras)
-Pros and Cons (doesn't have IIIF, lots of workflows; folks with more robust needs but not needing a full DB should look at Minicomp/Wax)
-Example site (idahatiu.github.io)
+* Placeholder for Table of Content
+{:toc}
 
+## Pros and cons of using this theme
 
-# About your community's collection
+### Pros
+
+- Very simple
+- Free
+- Requires minimal upkeep
+
+### Cons
+- doesn't have IIIF, an industry-standard markdown interpreter for library archives and collections
+- the minimal workflow may be too restrictive
+- no filtering or pagination for very long lists of items
+
+# Decisions before you start
+{: .subheadline }
 
 See a sample collection at https://idahatiu.github.io/archives/
 
+## Colors and Fonts
+
+There are [8 pre-built color palettes]({{ site.baseurl }}/docs/colors/). This site uses the "tan" color palette; the idahatiu site uses the "marigold" color palette.
+
+There are [4 headline and main-text font presets]({{ site.baseurl }}/docs/fonts/). This site uses the "Source" font collection; the idahatiu site uses the "Slab" font collection.
+
+## Vocabulary
+
+### About your community's collection
+
 Some community archives use different words to describe their community members. We've included default language here, along with some suggestions.
 
-## Collection
+#### Collection
 
 The collection of items built by the community can have lots of different names. Options include: archive, community archive, collection, compilation.
 
 This is used in the main navigation for your site, and in the descriptions of your site's 
 
-## Items
+#### Items
 
 Items are the individual things that form a collection. Options include: item, object, heirloom, contribution
 
-## Contributor
+#### Contributor
 
 A contributor is the person who contributed an object. Options include: person, contributor, community member, descendant
 
-## Groups
+#### Groups
 
 A group helps organize individual contributors into related sections in any way you choose. Options include: group, family, related items
 
-## Stories
+#### Stories
 
 A story adds your community's voices to the web site. Options include: story, history, narrative, tale, memoir
 
-## Team Members
+#### Team Members
 
 Team members are the folks who work with the community to help collect and post items. This may or may not be part of your community's collection process. If it is, leave these blank.
 
 # Item Listings
+{: .subheadline }
 
 YAML format options:
 
@@ -55,7 +79,15 @@ format: photo`
 - outsidelink (includes social media posts, newspaper articles)
 
 
-`
+# Formatting
+{: .subheadline }
+
+# Technical Guide
+{: .subheadline }
+
+## File Tree
+
+<!--`
 ├── LICENSE.txt
 ├── README.md
 ├── _includes
@@ -88,3 +120,5 @@ format: photo`
 - https://www.siteleaf.com/blog/making-your-first-jekyll-theme-part-2/
 - https://github.com/benbalter/jekyll-remote-theme
 - https://jekyllrb.com/docs/themes/
+- https://webdesign.tutsplus.com/tutorials/how-to-create-and-publish-a-jekyll-theme-gem--cms-27475
+-->

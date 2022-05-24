@@ -1,47 +1,23 @@
 ---
-title: IDAH Community Archiving Template
+title: Community-Archive Jekyll Theme
 layout: homepage
 permalink: /
+pullquote: "You're 5 steps from a community archive!"
+quoteattribution: ""
 ---
 
-<div class="darkbg">
-<div class="grid-container">
-<h4 class="center">{{ site.subtitle }}</h4>
-<h1 class="center siteheader subheadline">{{ site.title }}</h1>
-</div>
-</div>
+### About the Community-Archive Jekyll Theme
 
-<div class="grid-container">
-<div class="grid-x grid-padding-x align-middle">
-<div class="cell medium-8 align-right small-order-2 medium-order-1 large-order-1 align-middle" markdown="1" >
+This Jekyll theme was designed for folks who want to host a simple online exhibit on Github Pages for free with minimal technical skill. There are no additional plugins or other complex dependencies; it will just run on Github Pages, and you can use Github's built-in web-based editor to add new files or update existing files.
 
-The [IDAH@IU team](https://idah.indiana.edu) often gets requests from faculty, staff and students asking for advice on personal web sites. This repository provides a starting point for a basic personal web site using Github Pages
+### Who is it for?
 
-- [On our web site](https://idah.indiana.edu)
-- By email at idah at indiana.edu
-</div>
-<div class="cell medium-4 align-left small-order-1 medium-order-2 large-order-2" markdown="1" >
+This theme works best for communities who need simple archiving with minimal technical skills and simple workflows. To keep things simple, it doesn't have built-in search or filtering. ***If this sounds like you, and you don't need blogs or other add-ons yet, the best way to start is using the Quick Start guide, above.***
 
-![alt text]({{ site.baseurl }}{{ site.urlimg }}{{ site.sitelogo }}){:class="profilephoto"}
+If you need something more complex but want to stick with Github Pages because it's free and doesn't require you to find a web host of your own, we recommend [Minicomp/Wax](https://minicomp.github.io/wax/), a Github theme with searching, filtering and IIIF metadata (which tracks information about each object in your collection in more formal terms.)
 
-<div class="address">
-  	<hr><p style="text-align:center">{% if site.email != blank%}<em>{{ site.email }}</em>{%endif%}</p><hr>
-</div>
+That said, anyone can use Community-Archive. If you're familiar with Github Pages and Jekyll, or you want blog posts and an item collection, this version of the theme is a kitchen-sink version with everything in it. You can fork it as you would any other Jekyll theme.
 
-</div>
-</div>
-</div>
-<!--
-CARD FEATURES
-<div class="alabaster">
-	<div class="grid-container">
-		<div class="grid-x grid-padding-x">
-		  <div class="cell small-12 flex-container flex-dir-column large-flex-dir-row">
-			<div class="callout primary flex-child-auto">Net.Create, a network analysis data-management and visualization tool, values the importance of interpretation, sourcing, and flexible taxonomy equally with network statistics; this emphasis balances humanities and network-analysis concerns for historians engaging in network analysis.</div>
-			<div class="callout primary flex-child-auto">Minimal-computing platforms for History Harvests and community archiving emphasize the historiographic value of equitable citation and labor practices and support broad access to digital-history projects.</div>
-			<div class="callout primary flex-child-shrink large-flex-child-auto">Auto on Large</div>
-		  </div>
-		</div>
-	</div>
-</div>
--->
+### How it started
+
+The [IDAH@IU team](https://idah.indiana.edu) often gets requests to support archiving projects. This repository provides a starting point, a template for using simple Github Pages, done in partnership with [ImaginX en Movimiento (IXeM)](https://www.instagram.com/ixemcollective/?hl=en) co-founded by Marisa Hicks-Alcaraz, the [Center for Research on Race, Ethnicity and Society](https://crres.indiana.edu), and the [Asian Culture Center](https://asianresource.indiana.edu) at Indiana University Bloomington.

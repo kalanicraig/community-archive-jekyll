@@ -1,16 +1,23 @@
 # Site navigation links
 
-- title: Our Community
+- title: About This Theme
   url: /
   excerpt:
   image:
 
-- title: Our Collection
-  url: /collection
+- title: Quick Start Guide
+  url: /quickstart
   excerpt:
   image:
 
-- title: Our Stories
-  url: /stories
+- title: Theme Docs
+  url: /docs
   excerpt:
   image:
+  
+- title: Example Site
+  url: https://idahatiu.github.io
+  excerpt:
+  image:
+
+
