@@ -1,0 +1,38 @@
+<!-- Sample 1-->
+<!-- Posts panel container -->
+<div class="posts-panel">
+
+  <!-- Panel's content -->
+  <div class="panel-content">
+
+    <!-- Posts list -->
+    <section class="posts-list">
+{% for post in site.posts %}
+      <div class="post-item">
+        {% if post.image %}<a href="#" class="post-thumbnail">
+          <img class="thumbnail" src="https://static.pexels.com/photos/66274/sunset-poppy-backlight-66274.jpeg" alt="">
+        </a>{% endif %}
+        <div class="post-text">
+          <a href="{{ site.url }}{{ post.url }}">
+            <h3 class="post-title card-title accentbg">{{ post.title }}</h3>
+          </a>
+          <div class="post-meta">
+            <span class="meta"><span class="meta-icon fa fa-user-circle-o" aria-hidden="true"></span><a class="meta-text">{{ post.author }}</a></span>
+            <span class="meta"><span class="meta-icon fa fa-clock-o" aria-hidden="true"></span><span class="meta-text">{{ post.date | date: "%d %B %Y"}}</span></span>
+          </div>
+          <div class="post-summary">
+            <p>{{ post.excerpt | strip_html | truncatewords:30 }} 
+              <a href="{ site.url }}{{ post.url }}" class="post-read-more">Read more<span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+{% endfor %}
+    </section>
+  </div>
+</div>
+
+
+
+
