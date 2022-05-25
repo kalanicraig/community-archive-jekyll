@@ -1,4 +1,6 @@
 # community-archive Jekyll theme
+https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue
+
 
 This repository provides a web site template for communities in need of a free, easy-to-configure online exhibit.
 

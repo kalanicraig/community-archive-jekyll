@@ -20,9 +20,6 @@ Base settings
 		  font-size: 12pt;
 		}
 	}
-	pre {
-		font-family: $pre-font;
-	}
 	
 	a[href]:after {
     content: ""; }
@@ -285,6 +282,11 @@ Typographic & Design Elements
 	}
 	.citation p {
 		margin: 0px;
+	}
+	
+	.language-plaintext {
+		background-color: $accent-bg;
+		color: $accent-link;
 	}
 
 	.center {
@@ -562,3 +564,4 @@ Footer
 	  margin-left: 0.75rem;
 	  margin-bottom: 0;
 	}
+	

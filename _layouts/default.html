@@ -1,4 +1,7 @@
-﻿<!doctype html>
+﻿{% capture timestamp %}January 1, {{site.sitedate}}{% endcapture %}
+{% assign SiteYear = timestamp | date: "%Y" %}
+{% assign NowYear = "now" | date: "%Y" %}
+<!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 <head>
 {% include _head.html %}
