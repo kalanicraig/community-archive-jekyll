@@ -140,14 +140,17 @@ Base settings
 	  h6, .h6 {
 		font-size: 12pt; }
 	}
+
+	@media screen and (min-width:40em){
 	.subheadline {
 		text-transform: uppercase;
 		font-weight: 800;
-		text-align:center;
 		display: grid;
+		text-align:center;
 		grid-template-columns: .5fr auto .5fr;
 		grid-template-rows: .7em 0;
 		grid-gap: 20px;
+	}
 	}
 
 	.subheadline:after,.subheadline:before {
@@ -155,7 +158,7 @@ Base settings
 		display: block;
 		border-bottom: 1px solid $dark-headers;
 	}
-
+	
 	.CV {
 		font-weight:600;
 	}
