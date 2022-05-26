@@ -9,7 +9,7 @@ title: A Sample Blog Post with Markdown Kitchen Sink Examples
 excerpt: This sample blog post is both a template for future blog posts and an example-formatting page.
 author: kalani-craig
 pullquote: "You're 5 steps from a community archive!"
-image: "site_logo.jpg"
+image: "IUB_SampleGates.jpg"
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
@@ -22,9 +22,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # Markdown Kitchen Sink Example
 
-![Tux, the Linux mascot](/assets/images/tux.png){ .align-left}
-
-This is a normal paragraph following a header, with an image aligned left. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
 ## Kitchen Header 2 - 1
 
@@ -33,6 +31,7 @@ This is a normal paragraph following a header, with an image aligned left. GitHu
 > When something is important enough, you do it even if the odds are not in your favor.
 
 ### Kitchen Header 3 - 1.1
+{: .clearfix}
 
 ```js
 // Javascript code with syntax highlighting.
@@ -85,7 +84,9 @@ while True:
 
 ### Kitchen Header 7 = 1.2
 
-There's a horizontal rule below this.
+![A left-wrapped image]({{ site.baseurl }}{{ site.urlimg }}{{ page.image }}){: .float-left .thumbnail}
+
+There's a horizontal rule below this and an image to the left that text will wrap around.
 
 * * *
 
@@ -157,15 +158,11 @@ And a task list
 
 Small image
 
-![](https://github.blog/wp-content/uploads/2019/01/Company@2x-2.png)
-
-### Kitchen Header 14 - 2.1
-
-Large image
+![A small image]({{ site.baseurl }}{{ site.urlimg }}{{ page.image }})
 
 ![](https://guides.github.com/activities/hello-world/branching.png)
 
-### Kitchen Header 15 - 2.2
+### Kitchen Header 15 - 2.1
 
 Definition lists can be used with HTML syntax.
 
@@ -180,7 +177,7 @@ Definition lists can be used with HTML syntax.
 <dd>Green</dd>
 </dl>
 
-#### Kitchen Header 16 - 2.2.1
+#### Kitchen Header 16 - 2.1.1
 
 ```
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.

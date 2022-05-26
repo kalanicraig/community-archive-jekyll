@@ -132,7 +132,7 @@ Metadata starts and ends with a line that has three dashes and nothing else. (th
 # Formatting
 {: .subheadline }
 
-Most of the formatting for images is taken care of by the metadata (see above).
+Most of the formatting for items is taken care of by individual item metadata (see above).
 
 To add additional text, add it below the second set of hyphens that mark the metadata at the beginning of each file.
 
@@ -140,17 +140,21 @@ To format additional text, use markdown. We've provided [an example page]({{ sit
 
 # Blog posts
 
-The kitchen-sink formatting sample is also [sample blog post]({{ site.baseurl }}/2022/05/15/a-sample-blog-post.html), which is linked from the site's main [blog-post list page](/blog). 
+The kitchen-sink formatting sample is also a [sample blog post]({{ site.baseurl }}/2022/05/15/a-sample-blog-post.html), which is linked from the site's main [blog-post list page](/blog). 
 
 If you'd prefer not to have a blog, but you want to keep the formatting-example post, edit the `_navigation.yml` file in your `_data` folder and remove the "Blog" entry.
-
 
 # Technical Guide
 {: .subheadline }
 
 ## File Tree
 
-These files are included in the 
+These files are included in the Github package. To install as a theme gem, remove the .gemspec file.
+
+For a standard site with no digital exhibit, remove the `_items` folder, the `assets/items` folder, and the Collection entry in the `_navigation.yml` file.
+
+For a digital exhibit with no blog, remove the Blog entry in the `_navigation.yml` file.
+
 ```
 ├── LICENSE
 ├── README.md
@@ -227,7 +231,7 @@ These files are included in the
     ├── index.md
     └── quickstart.md
 ```
-# Theme Doc Info for Pushing Theme to remote status
+<!--# Theme Doc Info for Pushing Theme to remote status
 
 - ***https://jekyllrb.com/docs/themes/#creating-a-gem-based-theme***
 - https://www.siteleaf.com/blog/making-your-first-jekyll-theme-part-2/
