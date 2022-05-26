@@ -22,7 +22,9 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # Markdown Kitchen Sink Example
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+![Tux, the Linux mascot](/assets/images/tux.png){ .align-left}
+
+This is a normal paragraph following a header, with an image aligned left. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
 ## Kitchen Header 2 - 1
 

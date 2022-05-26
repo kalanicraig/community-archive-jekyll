@@ -150,33 +150,83 @@ If you'd prefer not to have a blog, but you want to keep the formatting-example 
 
 ## File Tree
 
-<!--`
-├── LICENSE.txt
+These files are included in the 
+```
+├── LICENSE
 ├── README.md
+├── _config.yml
+├── _data
+│   ├── authors.yml
+│   └── navigation.yml
 ├── _includes
-│   ├── footer.html
-│   ├── google-analytics.html
-│   ├── head.html
-│   ├── header.html
-│   ├── icon-github.html
-│   ├── icon-github.svg
-│   ├── icon-twitter.html
-│   └── icon-twitter.svg
+│   ├── _footer.html
+│   ├── _head.html
+│   ├── _header-and-nav.html
+│   ├── _itembox.html
+│   ├── _itemlist.html
+│   └── _postlist.html
+├── _items
+│   ├── 2019-10-01-0003.md
+│   ├── 2019-10-01-0006.md
+│   ├── 2019-10-01-0008.md
+│   └── 2019-10-01-0015.md
 ├── _layouts
-│   ├── default.html
-│   ├── home.html
-│   ├── page.html
-│   └── post.html
+│   ├── collection.html
+│   ├── default.html
+│   ├── group.html
+│   ├── homepage.html
+│   ├── item.html
+│   ├── page.html
+│   ├── post.html
+│   └── stories.html
+├── _posts
+│   ├── 2022-05-01-post-two.md
+│   └── 2022-05-15-a-sample-blog-post.md
 ├── _sass
-│   ├── minima
-│   │   ├── _base.scss
-│   │   ├── _layout.scss
-│   │   └── _syntax-highlighting.scss
-│   └── minima.scss
-└── assets
-    └── main.scss
-`
-
+│   ├── _app.scss
+│   ├── _foundation.scss
+│   ├── _syntax.scss
+│   ├── colors
+│   │   ├── _dusk.scss
+│   │   ├── _lavenderred.scss
+│   │   ├── _leafgreen.scss
+│   │   ├── _marigold.scss
+│   │   ├── _navy.scss
+│   │   ├── _red.scss
+│   │   ├── _tan.scss
+│   │   └── _teal.scss
+│   └── fonts
+│       ├── _quattrocento.scss
+│       ├── _roboto.scss
+│       ├── _slab.scss
+│       └── _source.scss
+├── assets
+│   ├── css
+│   │   └── main.scss
+│   ├── img
+│   │   └── site_logo.jpg
+│   └── items
+│       ├── 2019-10-01-0003_02.jpg
+│       ├── 2019-10-01-0006_01.jpg
+│       ├── 2019-10-01-0008.png
+│       └── 2019-10-01-0015.png
+├── community-archive.gemspec
+├── js
+│   ├── app.js
+│   └── vendor
+│       ├── foundation.js
+│       ├── foundation.min.js
+│       ├── jquery.js
+│       └── what-input.js
+└── pages
+    ├── blog.md
+    ├── collection.md
+    ├── colors.md
+    ├── docs.md
+    ├── fonts.md
+    ├── index.md
+    └── quickstart.md
+```
 # Theme Doc Info for Pushing Theme to remote status
 
 - ***https://jekyllrb.com/docs/themes/#creating-a-gem-based-theme***
