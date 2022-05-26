@@ -12,7 +12,7 @@ format: item
 {% if item.photo %}
 	{% assign ItemPhotoResult = item.photo %}
 {% else %}
-	{% capture ItemImagePath %}assets/items/{{ ItemID }}{% endcapture %}
+	{% capture ItemImagePath %}{{ urlitemimg }}{{ ItemID }}{% endcapture %}
 	{% for static_file in site.static_files %}
 		{% if static_file.path contains ItemImagePath %}
 			{% capture ItemPhotoResult %}{{site.baseurl}}{{static_file.path}}{% endcapture %}

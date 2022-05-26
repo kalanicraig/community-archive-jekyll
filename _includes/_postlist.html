@@ -9,15 +9,17 @@
     <section class="posts-list">
 {% for post in site.posts %}
       <div class="post-item">
-        {% if post.image %}<a href="#" class="post-thumbnail">
-          <img class="thumbnail" src="https://static.pexels.com/photos/66274/sunset-poppy-backlight-66274.jpeg" alt="">
-        </a>{% endif %}
+        <a href="#" class="post-thumbnail">
+          {% if post.image %}<img class="thumbnail" src="https://static.pexels.com/photos/66274/sunset-poppy-backlight-66274.jpeg" alt="">{% endif %}
+        </a>
         <div class="post-text">
           <a href="{{ site.url }}{{ post.url }}">
             <h3 class="post-title card-title accentbg">{{ post.title }}</h3>
           </a>
           <div class="post-meta">
-            <span class="meta"><span class="meta-icon fa fa-user-circle-o" aria-hidden="true"></span><a class="meta-text">{{ post.author }}</a></span>
+			 {% if post.author %}
+				{% assign author = site.data.authors[post.author] %}
+		<span class="meta"><span class="meta-icon fa fa-user-circle-o" aria-hidden="true"></span>{% if author.website %}<a class="meta-text" href="{{ author.website }}" target="_blank">{%endif%}{{ author.name }}{% if author.website %}</a>{% endif %}</span>{% endif %}
             <span class="meta"><span class="meta-icon fa fa-clock-o" aria-hidden="true"></span><span class="meta-text">{{ post.date | date: "%d %B %Y"}}</span></span>
           </div>
           <div class="post-summary">

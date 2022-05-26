@@ -6,7 +6,7 @@
 @import 'colors/{% if site.colorchoice == blank%}navy{%else%}{{ site.colorchoice }}{%endif%}';
 **/
 @import 'fonts/slab';
-@import 'colors/lavenderred';
+@import 'colors/red';
 @import 'foundation';
 @import 'syntax';
 @import 'app';

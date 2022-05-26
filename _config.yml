@@ -121,6 +121,9 @@ collections:
 #    name: true
 #    folder: true
 #    sort_by: folder
+  authors:
+    output: false
+    name: true
 
 ##############################################
 # WEBSITE ORGANIZATION
@@ -140,6 +143,7 @@ baseurl: ''
 # Markdown-Example for posts ![Image Text]({{ site.url }}{{ site.baseurl }}{{ site.urlimg }}image.jpg)
 #
 urlimg: '/assets/img/'
+urlitemimg: '/assets/items/'
 permalink: /:categories/:year/:month/:day/:title:output_ext
 
 markdown : kramdown
@@ -149,10 +153,12 @@ syntax_highlighter: rouge
 exclude :
     - Gemfile
     - Gemfile.lock
+    - CNAME
     - LICENSE
     - README.md
     - pages/PagesOld
     - INSTALL.md
+    - screenshot.png
 include: ['_pages']
 
 sass:
