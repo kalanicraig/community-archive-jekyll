@@ -10,7 +10,7 @@
 {% for post in site.posts %}
       <div class="post-item">
         <a href="#" class="post-thumbnail">
-          {% if post.image %}<img class="thumbnail" src="{{ site.baseurl }}{{ site.urlimg }}{{ site.sitelogo }}" alt="">{% endif %}
+          {% if post.image %}<img class="thumbnail" src="{{ site.baseurl }}{{ site.urlimg }}{{ post.image }}" alt="">{% endif %}
         </a>
         <div class="post-text">
           <a href="{{ site.url }}{{ post.url }}">
