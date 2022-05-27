@@ -46,6 +46,7 @@ permalink: /docs/colors/
 
 # Customizing a color palette
 {: .subheadline}
+
 This theme uses 5 colors.
 
 1. Main text color and nav-bar background color
