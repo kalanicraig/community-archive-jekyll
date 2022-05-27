@@ -14,7 +14,7 @@ The 5 steps below will guide you through making a copy of our example site and c
 ## Step 1
 {: .subheadline }
 
-**Create a new Github.com account by following this video: LINK**
+**Create a new Github.com account by following this video: [https://youtu.be/plg5QomrHHg](https://youtu.be/plg5QomrHHg)**
 
 1. Your Github username should be the name people will search for to find your community. For instance, a community group called "New City Community Archive" would choose the username "newcitycommunityarchive"
 2. The "free" option will mean people can see, but not edit, the files that run your web site.
@@ -23,7 +23,7 @@ The 5 steps below will guide you through making a copy of our example site and c
 ## Step 2
 {: .subheadline }
 
-**Make a copy of our template community-archive site by following this video:**
+**Make a copy of our template community-archive site by following this video: [https://youtu.be/aDQZ1lcpMn0](https://youtu.be/aDQZ1lcpMn0)**
 
 1. Visit [`https://github.com/idahatiu/idahatiu.github.io`](https://github.com/idahatiu/idahatiu.github.io)
 2. Press the "Fork" button
@@ -32,7 +32,7 @@ The 5 steps below will guide you through making a copy of our example site and c
 ## Step 3
 {: .subheadline }
 
-**Customize the `_config.yml` with your community information by following this video: LINK**
+**Customize the `_config.yml` with your community information by following this video: [https://youtu.be/UR3RSXWGpJo](https://youtu.be/UR3RSXWGpJo)**
 
 The `_config.yml` file contains settings for exhibit info, font, and color choices that affect the entire web site.
 
@@ -45,7 +45,7 @@ The `_config.yml` file contains settings for exhibit info, font, and color choic
 ## Step 4
 {: .subheadline }
 
-**Add your first item by following this video: LINK**
+**Add your first item by following this video: [https://youtu.be/LoFCewSXC7c](https://youtu.be/LoFCewSXC7c)**
 
 Each item in the collection has an item ID (no spaces or punctuation) with one or more files associated with it (e.g. `0001.md`).
 
@@ -57,7 +57,7 @@ Each item in the collection has an item ID (no spaces or punctuation) with one o
 ## Step 5
 {: .subheadline }
 
-**Publish your site using Github Pages by following this video: LINK.**
+**Publish your site using Github Pages by following this video: [https://youtu.be/MC7_-Cx-i_E](https://youtu.be/MC7_-Cx-i_E).**
 
 1. Find the "Settings" link on the top-right bar of your repository's info page
 2. Find the "Pages" link on the left-hand side of your repository's settings page
