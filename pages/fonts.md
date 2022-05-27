@@ -5,24 +5,33 @@ permalink: /docs/fonts/
 ---
 
 
-# Color options
+# Preset font options
+{: .subheadline}
 
-## Brown
-  <script src="https://coolors.co/palette-widget/widget.js"></script>
-  <script data-id="02255110307697208">new CoolorsPaletteWidget("02255110307697208", ["483b32","abbf73","faf8f0","dde5b6","836249"]); </script>
+## Archivo Narrow
+![Archivo Narrow]({{ site.baseurl }}{{ site.urlimg }}/fonts/ArchivoNarrow.jpg)
 
-## Navy
-  <script src="https://coolors.co/palette-widget/widget.js"></script>
-  <script data-id="05875225772800331">new CoolorsPaletteWidget("05875225772800331", ["353535","549da0","ffffff","d9d9d9","294e66"]); </script>
+## Baloo 2
+![Baloo 2]({{ site.baseurl }}{{ site.urlimg }}/fonts/Baloo.jpg)
 
-## Orange
-  <script src="https://coolors.co/palette-widget/widget.js"></script>
-  <script data-id="01621724130939607">new CoolorsPaletteWidget("01621724130939607", ["252422","eb5e28","fffbf7","dcd0cc","4c4843"]); </script>
+## Quattrocento
+![Quattrocento]({{ site.baseurl }}{{ site.urlimg }}/fonts/Quattrocento.jpg)
 
-## Dusk
-  <script src="https://coolors.co/palette-widget/widget.js"></script>
-  <script data-id="03768526682767458">new CoolorsPaletteWidget("03768526682767458", ["313628","a6ae98","eef5e0","979187","544f53"]); </script>
+## Raleway
+![Raleway]({{ site.baseurl }}{{ site.urlimg }}/fonts/Raleway.jpg)
 
-## Teal
-  <script src="https://coolors.co/palette-widget/widget.js"></script>
-  <script data-id="036597300461979865">new CoolorsPaletteWidget("036597300461979865", ["092d34","ffa62b","f7f4f3","82c0cc","347383"]); </script>
+## Roboto
+![Roboto]({{ site.baseurl }}{{ site.urlimg }}/fonts/Roboto.jpg)
+
+## Slab
+![Slab]({{ site.baseurl }}{{ site.urlimg }}/fonts/Slab.jpg)
+
+## Source
+![Source]({{ site.baseurl }}{{ site.urlimg }}/fonts/Source.jpg)
+
+# Customizing fonts
+{: .subheadline}
+
+This theme uses 3 fonts: a headline font, a body font, and a monospace font for code blocks/syntax highlighting.
+
+You can create your own font set by creating a new font file in the `_sass/fonts/` folder and importing a set of fonts to replace the values there. The collection at [Google Fonts](https://fonts.google.com) is a good starting point.

@@ -1,12 +1,8 @@
 ---
 ---
 
-/**
 @import 'fonts/{% if site.fontchoice == blank%}quattrocento{%else%}{{ site.fontchoice }}{%endif%}';
 @import 'colors/{% if site.colorchoice == blank%}navy{%else%}{{ site.colorchoice }}{%endif%}';
-**/
-@import 'fonts/slab';
-@import 'colors/red';
 @import 'foundation';
 @import 'syntax';
 @import 'app';
