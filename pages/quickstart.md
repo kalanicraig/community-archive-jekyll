@@ -38,7 +38,7 @@ The `_config.yml` file contains settings for exhibit info, font, and color choic
 
 1. Select the `_config.yml` from the list of files in your repository.
 2. Click the pencil button to edit the file
-   - Information about your community is on lines 42-63.
+   - Information about your community is on lines 42-63. To leave a line blank, put two quote marks together with no spaces, like so: `twitter: ""`
    - Choices for [colors]({{ site.baseurl }}/docs/colors/) and [fonts]({{ site.baseurl }}/docs/fonts/) are on lines 77-93.
 3. Scroll to the bottom and use the "commit" button (Github's version of a "save" button)
 
