@@ -10,7 +10,7 @@ The easiest way to use this theme is to fork the example site at [https://github
 
 [![A live preview][2]][1]
 
-[1]: https://mmistakes.github.io/minimal-mistakes/
+[1]: https://idahatiu.github.io
 [2]: screenshot.png (live preview)
 
 ![layout examples](screenshot-layouts.png)
