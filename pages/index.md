@@ -14,7 +14,7 @@ This Jekyll theme was designed for folks who want to host a simple online exhibi
 
 This theme works best for communities who need simple archiving with minimal technical skills and simple workflows. To keep things simple, it doesn't have built-in search or filtering. ***If this sounds like you, and you don't need blogs or other add-ons yet, the best way to start is using the Quick Start guide, above.***
 
-If you need something more complex but want to stick with Github Pages because it's free and doesn't require you to find a web host of your own, we recommend [Minicomp/Wax](https://minicomp.github.io/wax/), a Github theme with searching, filtering and IIIF metadata (which tracks information about each object in your collection in more formal terms.)
+If you need something more complex but want to stick with Github Pages because it's free and doesn't require you to find a web host of your own, we recommend either [Minicomp/Wax](https://minicomp.github.io/wax/) (a Github theme with searching, filtering and IIIF metadata to formalize information about your collection) or [CollectionBuilder](https://collectionbuilder.github.io) (a Github theme that uses Google Spreadsheets to incorporate maps and timelines).
 
 That said, anyone can use Community-Archive. If you're familiar with Github Pages and Jekyll, or you want blog posts and an item collection, this version of the theme is a kitchen-sink version with everything in it. You can fork it as you would any other Jekyll theme.
 
