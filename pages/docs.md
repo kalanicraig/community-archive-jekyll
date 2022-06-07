@@ -7,6 +7,8 @@ permalink: /docs
 # Table of Contents
 {: .subheadline }
 
+For the full repository, visit [https://github.com/kalanicraig/community-archive-jekyll](https://github.com/kalanicraig/community-archive-jekyll)
+
 * Placeholder for Table of Content
 {:toc}
 
