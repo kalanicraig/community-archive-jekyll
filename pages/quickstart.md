@@ -59,6 +59,11 @@ Each item in the collection has an item ID (no spaces or punctuation) with one o
    - We like `YYYY-MM-DD-ItemNo` (so the 4th item collected on May 15, 2022, would be `2022-05-15-004`)
 3. Each item will have its own information file in the `_items` folder (2022-05-15-004.md) and a photo in the `/assets/items/` folder (2022-05-15-004.jpg or 2022-05-15-004.png).
 
+<!---
+Some emphasis on what should be between "" and what should not be can be helpful.
+-->
+
+
 ## Step 5
 {: .subheadline }
 
