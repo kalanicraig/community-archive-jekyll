@@ -3,6 +3,9 @@ title: How to use this theme
 layout: page
 permalink: /docs
 ---
+<!---
+A reference with link to the Vocabulary part of this section (Theme Codes) in the step 4 of Quick Start would be useful.
+-->
 
 # Table of Contents
 {: .subheadline }
@@ -24,11 +27,20 @@ For the full repository, visit [https://github.com/kalanicraig/community-archive
 - doesn't have IIIF, an industry-standard markdown interpreter for library archives and collections
 - the minimal workflow may be too restrictive
 - no filtering or pagination for very long lists of items
+<!---
+Capitalize the first letter. 
+Another con in this particular theme (i.e. Tan) is that the color of the link once you click on it is hardly distinguishable from the rest of the text. 
+-->
+
 
 # Advance Prep
 {: .subheadline }
 
 See a sample collection at https://idahatiu.github.io/archives/
+<!---
+Make this a hyperlink.
+-->
+
 
 ## Colors and Fonts
 
