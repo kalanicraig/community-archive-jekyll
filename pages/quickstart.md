@@ -19,6 +19,11 @@ The 5 steps below will guide you through making a copy of our example site and c
 1. Your Github username should be the name people will search for to find your community. For instance, a community group called "New City Community Archive" would choose the username "newcitycommunityarchive"
 2. The "free" option will mean people can see, but not edit, the files that run your web site.
 
+<!---
+1)The audio of the videos is mono and a bit annoying when listening through headphones.
+2)It would be more convenient if the links opened in a new tab.
+-->
+
 
 ## Step 2
 {: .subheadline }
@@ -58,7 +63,14 @@ Each item in the collection has an item ID (no spaces or punctuation) with one o
 {: .subheadline }
 
 **Publish your site using Github Pages by following this video: [https://youtu.be/MC7_-Cx-i_E](https://youtu.be/MC7_-Cx-i_E).**
+<!---
+The video link on Step 5 needs to be fixed. On the live webpage the underscore after 7 is missing and also the link does not appear correctly.
+-->
 
 1. Find the "Settings" link on the top-right bar of your repository's info page
 2. Find the "Pages" link on the left-hand side of your repository's settings page
 3. Choose the "main" branch to publish in Github Pages
+
+<!---
+The publishing step needs a bit of more elaboration. I followed the steps to do it myself and when I saw the message “your website is ready to be published”, I was still looking for something like a “publish” button to click on, not knowing that all I needed to do is to wait for the page to gets published.
+-->
