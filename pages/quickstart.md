@@ -14,21 +14,20 @@ The 5 steps below will guide you through making a copy of our example site and c
 ## Step 1
 {: .subheadline }
 
-**Create a new Github.com account by following this video: [https://youtu.be/plg5QomrHHg](https://youtu.be/plg5QomrHHg)**
+**Create a new Github.com account by following this video: [https://youtu.be/plg5QomrHHg](https://youtu.be/plg5QomrHHg){:target="_blank"}**
 
 1. Your Github username should be the name people will search for to find your community. For instance, a community group called "New City Community Archive" would choose the username "newcitycommunityarchive"
 2. The "free" option will mean people can see, but not edit, the files that run your web site.
 
 <!---
 1)The audio of the videos is mono and a bit annoying when listening through headphones.
-2)It would be more convenient if the links opened in a new tab.
 -->
 
 
 ## Step 2
 {: .subheadline }
 
-**Make a copy of our template community-archive site by following this video: [https://youtu.be/aDQZ1lcpMn0](https://youtu.be/aDQZ1lcpMn0)**
+**Make a copy of our template community-archive site by following this video: [https://youtu.be/aDQZ1lcpMn0](https://youtu.be/aDQZ1lcpMn0){:target="_blank"}**
 
 1. Visit [`https://github.com/idahatiu/idahatiu.github.io`](https://github.com/idahatiu/idahatiu.github.io)
 2. Press the "Fork" button
@@ -37,7 +36,7 @@ The 5 steps below will guide you through making a copy of our example site and c
 ## Step 3
 {: .subheadline }
 
-**Customize the `_config.yml` with your community information by following this video: [https://youtu.be/UR3RSXWGpJo](https://youtu.be/UR3RSXWGpJo)**
+**Customize the `_config.yml` with your community information by following this video: [https://youtu.be/UR3RSXWGpJo](https://youtu.be/UR3RSXWGpJo){:target="_blank"}**
 
 The `_config.yml` file contains settings for exhibit info, font, and color choices that affect the entire web site.
 
@@ -50,7 +49,7 @@ The `_config.yml` file contains settings for exhibit info, font, and color choic
 ## Step 4
 {: .subheadline }
 
-**Add your first item by following this video: [https://youtu.be/LoFCewSXC7c](https://youtu.be/LoFCewSXC7c)**
+**Add your first item by following this video: [https://youtu.be/LoFCewSXC7c](https://youtu.be/LoFCewSXC7c){:target="_blank"}**
 
 Each item in the collection has an item ID (no spaces or punctuation) with one or more files associated with it (e.g. `0001.md`).
 
@@ -58,16 +57,12 @@ Each item in the collection has an item ID (no spaces or punctuation) with one o
 2. Each item should have its own unique filename.
    - We like `YYYY-MM-DD-ItemNo` (so the 4th item collected on May 15, 2022, would be `2022-05-15-004`)
 3. Each item will have its own information file in the `_items` folder (2022-05-15-004.md) and a photo in the `/assets/items/` folder (2022-05-15-004.jpg or 2022-05-15-004.png).
-
-<!---
-Some emphasis on what should be between "" and what should not be can be helpful.
--->
-
+  - The file for each item in the `_items` folder has a bunch of information about each item in the first few lines. Each line has a field type (e.g. `author`), and then a colon, and then the info that goes in that field surrounded by double quotes (`author: "Drew H""`). You can get more information about what goes in these item fields in the [Metadata: Line by Line](https://community-archive.kalanicraig.com/docs#metadata-line-by-line) section of the [Theme Docs](https://community-archive.kalanicraig.com/docs).
 
 ## Step 5
 {: .subheadline }
 
-**Publish your site using Github Pages by following this video: [https://youtu.be/MC7_-Cx-i_E](https://youtu.be/MC7_-Cx-i_E).**
+**Publish your site using Github Pages by following this video: [https://youtu.be/MC7\_-Cx-i_E](https://youtu.be/MC7\_-Cx-i_E){:target="_blank"}**
 <!---
 The video link on Step 5 needs to be fixed. On the live webpage the underscore after 7 is missing and also the link does not appear correctly.
 -->
