@@ -57,19 +57,18 @@ Each item in the collection has an item ID (no spaces or punctuation) with one o
 2. Each item should have its own unique filename.
    - We like `YYYY-MM-DD-ItemNo` (so the 4th item collected on May 15, 2022, would be `2022-05-15-004`)
 3. Each item will have its own information file in the `_items` folder (2022-05-15-004.md) and a photo in the `/assets/items/` folder (2022-05-15-004.jpg or 2022-05-15-004.png).
-  - The file for each item in the `_items` folder has a bunch of information about each item in the first few lines. Each line has a field type (e.g. `author`), and then a colon, and then the info that goes in that field surrounded by double quotes (`author: "Drew H""`). You can get more information about what goes in these item fields in the [Metadata: Line by Line](https://community-archive.kalanicraig.com/docs#metadata-line-by-line) section of the [Theme Docs](https://community-archive.kalanicraig.com/docs).
+  - The file for each item in the `_items` folder has a bunch of information about each item in the first few lines. Each line has a field type (e.g. `author`), and then a colon, and then the info that goes in that field surrounded by double quotes (`author: "Drew H"`). You can get more information about what goes in these item fields in the [Metadata: Line by Line](https://community-archive.kalanicraig.com/docs#metadata-line-by-line) section of the [Theme Docs](https://community-archive.kalanicraig.com/docs).
 
 ## Step 5
 {: .subheadline }
 
-**Publish your site using Github Pages by following this video: [https://youtu.be/MC7\_-Cx-i_E](https://youtu.be/MC7\_-Cx-i_E){:target="_blank"}**
-<!---
-The video link on Step 5 needs to be fixed. On the live webpage the underscore after 7 is missing and also the link does not appear correctly.
--->
+**Publish your site using Github Pages by following this video: [https://youtu.be/MC7\_-Cx-i_E](https://youtu.be/MC7_-Cx-i_E){:target="_blank"}**
+
 
 1. Find the "Settings" link on the top-right bar of your repository's info page
 2. Find the "Pages" link on the left-hand side of your repository's settings page
-3. Choose the "main" branch to publish in Github Pages
+3. Look for the message that says “your website is ready to be published” in blue or  “your site is published at...”.
+  - If you don't see either message, look for the drop-down menu that says "Branch", choose the "main" branch and press "Save" to publish your site in Github Pages
 
 <!---
 The publishing step needs a bit of more elaboration. I followed the steps to do it myself and when I saw the message “your website is ready to be published”, I was still looking for something like a “publish” button to click on, not knowing that all I needed to do is to wait for the page to gets published.
