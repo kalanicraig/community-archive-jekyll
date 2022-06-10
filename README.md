@@ -55,9 +55,9 @@ Additional sample posts are available under [posts archive][year-archive] on the
 
 - [Github](http://github.com/)
 - [Jekyll](http://jekyllrb.com/)
-- [Foundation](http://foundation.zurb.com/)
+- [Foundation](http://foundation.zurb.com/) (for responsive framework)
 - [Font Awesome](http://fontawesome.io/)
 - [Google Fonts](http://fonts.google.com/)
 - [Coolors](https://coolors.co)
-- [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)
+- [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) (for theme-doc examples)
 - [Shields.io](https://shields.io/category/coverage)
