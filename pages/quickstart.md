@@ -67,9 +67,11 @@ Each item in the collection has an item ID (no spaces or punctuation) with one o
 
 1. Find the "Settings" link on the top-right bar of your repository's info page
 2. Find the "Pages" link on the left-hand side of your repository's settings page
-3. Look for the message that says “your website is ready to be published” in blue or  “your site is published at...”.
-  - If you don't see either message, look for the drop-down menu that says "Branch", choose the "main" branch and press "Save" to publish your site in Github Pages
-
+3. Look for a text box with a green or blue background at the top that says "Your site is published" or "Your site is ready to be published"
+  - If you see a green box, you're ready to go. Click on the link!
+  - If you see a blue box, wait 5 minutes and reload the page. It should be green now, and you can click on the link.
+  - If you don't see either message, look for the drop-down menu that says "Branch", choose the "main" branch and press "Save" to publish your site in Github Pages.
+  
 <!---
 The publishing step needs a bit of more elaboration. I followed the steps to do it myself and when I saw the message “your website is ready to be published”, I was still looking for something like a “publish” button to click on, not knowing that all I needed to do is to wait for the page to gets published.
 -->
