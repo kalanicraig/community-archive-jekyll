@@ -9,7 +9,6 @@ $(".filter-simple-button").click(function() {
     $(".filter-simple-item").not('.'+value).hide('3000');
     $('.filter-simple-item').filter('.'+value).show('3000');
   }
-  document.getElementById("filterHead").innerHTML = $value;
 });
 
 // changes active class on filter buttons
