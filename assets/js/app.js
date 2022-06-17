@@ -16,3 +16,5 @@ $('.filter-simple-button').click(function () {
   $(this).siblings().removeClass('is-active');
   $(this).addClass('is-active');
 });
+
+document.getElementById("filterHead").innerHTML = "yourTextHere";
