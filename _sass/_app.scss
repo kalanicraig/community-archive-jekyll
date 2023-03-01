@@ -617,6 +617,45 @@ BLOG POST LISTINGS
   }
 }
 
+/** =================================
+Filter Buttons
+================================= **/
+
+
+.button-group-option .button:last-child {
+  margin-right: 0;
+}
+
+.button-group-option .button {
+  -webkit-flex: 1 1 0px;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
+}
+
+.button-group-option .button {
+  font-size: 1.125rem;
+}
+
+.button-group-option:before {
+  content: attr(data-grouptype);
+  z-index: 1;
+  color: #8a8a8a;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.25em;
+  border-radius: 5000px;
+  background: #fefefe;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.button-group-option .button + .button {
+  margin-left: 0.35rem;
+}
 
 /** =================================
 Footer
