@@ -33,15 +33,16 @@ format: stories
 		<div class="large-12 cell">
 			<div>
 				<div class="button-group round">
-					<button class="button hollow filter-simple-button is-active" data-filter="all" onclick="changeText()">All</button>
+					<button class="button hollow filter-simple-button is-active" data-filter="all">All</button>
 {% for group in uniquetags %}
-					<button class="button hollow filter-simple-button" data-filter="{{group}}" onclick="changeText()">{{group | replace: " ", "-"}}</button>
+					<button class="button hollow filter-simple-button" data-filter="{{group}}">{{group | replace: " ", "-"}}</button>
 {% endfor %}
 				</div>
 			</div>
 
+
 {% for groupset in uniquegroups %}
-		<h2 class="subheadline filterHead" id="GroupHeader">{{groupset}}</h2>
+		<h2 class="subheadline filterHead">{{groupset}}</h2>
 		</div>
 	<div class="grid-x grid-padding-x grid-margin-x">
 
