@@ -17,3 +17,10 @@ $('.filter-simple-button').click(function () {
   $(this).addClass('is-active');
 });
 
+
+function changeText()
+{
+    var value = $(this).attr('data-filter');
+    var GroupHeader = document.getElementById('GroupHeader');
+    GroupHeader.textContent = value;
+}
