@@ -152,7 +152,6 @@ permalink: /:categories/:year/:month/:day/:title:output_ext
 markdown : kramdown
 syntax_highlighter: rouge
 
-# This URL points directly to the images directory. It needs a slash at the end.
 exclude :
     - Gemfile
     - Gemfile.lock
