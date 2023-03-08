@@ -4,7 +4,7 @@
 			<div class="large-12 cell">
 				<div class="footer-actions">
 				  <div class="footer-actions-left">
-				   <a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter-square" aria-hidden="true"></i> {{ site.twitter }}</a>
+				   {%if site.twitter %}<a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter-square" aria-hidden="true"></i> {{ site.twitter }}</a>{%endif%}
 				  </div>
 				  <div class="footer-actions-right">
 					<a href="https://github.com/{{ site.github }}/"><i class="fa fa-github" aria-hidden="true"></i> {{ site.github }}</a>
