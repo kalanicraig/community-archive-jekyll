@@ -13,7 +13,6 @@ quoteattribution: ""
 
 <p>This form will generate and save a `_config.yml` file for you that you can upload to your new GitHub site.</p>
 
-
 <form id="Config" onsubmit="return getVals()">
   <div class="grid-container">
     <div class="grid-x grid-padding-x">
@@ -30,6 +29,13 @@ quoteattribution: ""
 			<input type="text" id="site_subtitle" name="site_subtitle input" placeholder="Optional. A subtitle that clarifies your project's goals." aria-describedby="site_subtitleHelpText">
 		  </label>
 		  <p class="help-text" id="site_subtitleHelpText">Optional. A subtitle that  your main title more clear.</p>
+      </div>
+
+      <div class="medium-12 cell">
+		  <label>Your github repository
+			<input type="text" id="site_repo" name="site_repo input" placeholder="idahatiu/idahatiu.github.io" aria-describedby="site_repoHelpText">
+		  </label>
+		  <p class="help-text" id="site_repoText">Recommended. Your github username, a forward slash (/) and your repository name</p>
       </div>
 
       <div class="medium-12 cell">
@@ -129,7 +135,7 @@ quoteattribution: ""
   </div>
 
 
-<input class="button round" id="bt" type="buttom" value="Save Config File" onclick="saveFile()" />
+<input class="button round" id="bt" type="buttom" value="Save Config File" onclick = "startDownload()" />
 </form>
 
 
@@ -322,28 +328,31 @@ plugins:
   
 `;
 
-// array loop through vars in text field and replacement vars
 
-    let saveFile = () => {
-    	
-        // Convert the text to BLOB.
-        const textToBLOB = new Blob([ConfigYMLTemplate], { type: 'text/plain' });
-        const sFileName = '_config.yml';	   // The file to save the data.
+  function startDownload() {
+	 // access the text from the input fields
+	var formEl = document.forms.BookPackageForm;
+	var formData = new FormData(Config);
 
-        let newLink = document.createElement("a");
-        newLink.download = sFileName;
-
-        if (window.webkitURL != null) {
-            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
-        }
-        else {
-            newLink.href = window.URL.createObjectURL(textToBLOB);
-            newLink.style.display = "none";
-            document.body.appendChild(newLink);
-        }
-
-        newLink.click(); 
-    }
+	var textarea = ConfigYMLTemplate.value;
+	var find = ["REPONAME", "SITETITLE", "SITESUBTITLE", "SITEDESCRIPTION", "SITEAUTHORSHORT", "SITEAUTHORFULL", "SITEEMAIL", "SITEWEBSITE", "SITETWITTER", "SITEGITHUB", "SITEFACEBOOK", "SITEINSTAGRAM"];
+	var replace = [formData.get('site_repo'), formData.get('site_title'), formData.get('site_subtitle'), formData.get('site_desc'), "SITEAUTHORSHORT", formData.get('site_owner'), formData.get('site_title'), "SITEWEBSITE", "SITETWITTER", "SITEGITHUB", "SITEFACEBOOK", "SITEINSTAGRAM"];
+	textarea = textarea.replaceArray(find, replace);
+	 
+	 // Create dummy <a> element using JavaScript.
+	 var hidden_a = document.createElement('a');
+	 
+	 // add texts as a href of <a> element after encoding.
+	 hidden_a.setAttribute('href', 'data:text/plain;charset=utf-8, '+ encodeURIComponent(textarea));
+	 
+	 // also set the value of the download attribute
+	 hidden_a.setAttribute('download', "_config.yml");
+	 document.body.appendChild(hidden_a);
+	 
+	 // click the link element
+	 hidden_a.click();
+	 document.body.removeChild(hidden_a);
+  }
 
 
 </script>
