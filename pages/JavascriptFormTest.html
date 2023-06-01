@@ -16,6 +16,9 @@ quoteattribution: ""
 <form id="Config" onsubmit="return getVals()">
   <div class="grid-container">
     <div class="grid-x grid-padding-x">
+      <div class="medium-12 cell">
+      	<h3 class="subheadline">About Your New Site</h3>
+      </div>
       <div class="medium-6 cell">
 
 		  <label>Site Title *
@@ -31,11 +34,18 @@ quoteattribution: ""
 		  <p class="help-text" id="site_subtitleHelpText">Optional. A subtitle that  your main title more clear.</p>
       </div>
 
-      <div class="medium-12 cell">
+      <div class="medium-6 cell">
 		  <label>Your github repository
 			<input type="text" id="site_repo" name="site_repo input" placeholder="idahatiu/idahatiu.github.io" aria-describedby="site_repoHelpText">
 		  </label>
 		  <p class="help-text" id="site_repoText">Recommended. Your github username, a forward slash (/) and your repository name</p>
+      </div>
+
+      <div class="medium-6 cell">
+		  <label>Site owner
+			<input type="text" id="site_owner" name="site_owner input" placeholder="A community name, or your name." aria-describedby="site_ownerHelpText">
+		  </label>
+		  <p class="help-text" id="site_ownerHelpText">Recommended. A community name, or your name, depending on who the main site author will be</p>
       </div>
 
       <div class="medium-12 cell">
@@ -45,13 +55,24 @@ quoteattribution: ""
 		  <p class="help-text" id="site_descHelpText">Recommended. A longer description (max 150 words) that helps search engines find your project.</p>
       </div>
 
-      <div class="medium-12 cell">
-		  <label>Site owner
-			<input type="text" id="site_owner" name="site_owner input" placeholder="A community name, or your name." aria-describedby="site_ownerHelpText">
+       <div class="medium-6 cell">
+		  <label>Start Date
+			<input type="text" id="site_start" name="site_owner input" placeholder="A 4-digit year." aria-describedby="site_startHelpText">
 		  </label>
-		  <p class="help-text" id="site_ownerHelpText">Recommended. A community name, or your name, depending on who the main site author will be</p>
+		  <p class="help-text" id="site_startHelpText">Required. A 4-digit year, so the copyright reflects the date you started your project.</p>
       </div>
 
+       <div class="medium-6 cell">
+		  <label>Site Visitor Tracking
+			<input type="text" id="site_googleg4" name="site_googleg4 input" placeholder="A 4-digit year." aria-describedby="site_googleg4HelpText">
+		  </label>
+		  <p class="help-text" id="site_googleg4HelpText">Optional. A <a href="https://analytics.google.com/" target="_blank">
+		  Google Analytics G4</a> tag will help you see how many people visit your site.</p>
+      </div>
+
+     <div class="medium-12 cell">
+      	<h3 class="subheadline">Styling Your New Site</h3>
+      </div>
       <div class="medium-6 cell">
 			<label>Font choice
 			  <select id="fontchoice" name="fontchoice input" placeholder="A community name, or your name." aria-describedby="fontchoiceHelpText">
@@ -82,13 +103,9 @@ quoteattribution: ""
 		  <p class="help-text" id="colorchoiceHelpText">Required. Choose from our preset color options. <a href="/docs/colors/" target="_blank">View those options here</a></p>
 		</div>
 
-      <div class="medium-6 cell">
-		  <label>Start Date
-			<input type="text" id="site_start" name="site_owner input" placeholder="A 4-digit year." aria-describedby="site_startHelpText">
-		  </label>
-		  <p class="help-text" id="site_startHelpText">Required. A 4-digit year, so the copyright reflects the date you started your project.</p>
+      <div class="medium-12 cell">
+      	<h3 class="subheadline">Linking to Social Media</h3>
       </div>
-
       <div class="medium-6 cell">
 		  <label>Twitter
 			<input type="text" id="site_twitter" name="site_twitter input" placeholder="A 4-digit year." aria-describedby="site_twitterHelpText">
@@ -100,21 +117,21 @@ quoteattribution: ""
 		  <label>Facebook
 			<input type="text" id="site_facebook" name="site_facebook input" placeholder="A 4-digit year." aria-describedby="site_facebookHelpText">
 		  </label>
-		  <p class="help-text" id="site_facebookHelpText">Optional. Your facebook username</p>
+		  <p class="help-text" id="site_facebookHelpText">Optional. Your Facebook username</p>
       </div>
 
       <div class="medium-6 cell">
 		  <label>Instagram
 			<input type="text" id="site_instagram" name="site_instagram input" placeholder="A 4-digit year." aria-describedby="site_instagramHelpText">
 		  </label>
-		  <p class="help-text" id="site_instagramHelpText">Optional. Your instagram username</p>
+		  <p class="help-text" id="site_instagramHelpText">Optional. Your Instagram username</p>
       </div>
 
       <div class="medium-6 cell">
 		  <label>Github
 			<input type="text" id="site_github" name="site_github input" placeholder="A 4-digit year." aria-describedby="site_githubHelpText">
 		  </label>
-		  <p class="help-text" id="site_githubHelpText">Optional. Your github username</p>
+		  <p class="help-text" id="site_githubHelpText">Optional. Your Github username</p>
       </div>
 
       <div class="medium-6 cell">
@@ -334,10 +351,7 @@ plugins:
 	var formData = new FormData(formEl);
 
 	var find = ["REPONAME", "SITETITLE", "SITESUBTITLE", "SITEDESCRIPTION", "SITEAUTHORSHORT", "SITEAUTHORFULL", "SITEEMAIL", "SITEWEBSITE", "SITETWITTER", "SITEGITHUB", "SITEFACEBOOK", "SITEINSTAGRAM", "SITEGOOGLEANALYTICSG4", "SITEFONTCHOICE", "SITECOLORCHOICE"];
-	var replace = [document.getElementById("site_repo").value, document.getElementById("site_title").value, document.getElementById("site_subtitle").value, document.getElementById("site_desc").value, "SITEAUTHORSHORT", document.getElementById("site_owner").value, document.getElementById("site_email").value, document.getElementById("site_website").value, document.getElementById("site_twitter").value, document.getElementById("site_github").value, document.getElementById("site_facebook").value, document.getElementById("site_instagram").value];
-document.getElementById("site_googleg4").value];
-document.getElementById("fontchoice").value];
-document.getElementById("colorchoice").value];
+	var replace = [document.getElementById("site_repo").value, document.getElementById("site_title").value, document.getElementById("site_subtitle").value, document.getElementById("site_desc").value, "SITEAUTHORSHORT", document.getElementById("site_owner").value, document.getElementById("site_email").value, document.getElementById("site_website").value, document.getElementById("site_twitter").value, document.getElementById("site_github").value, document.getElementById("site_facebook").value, document.getElementById("site_instagram").value, document.getElementById("site_googleg4").value, document.getElementById("fontchoice").value, document.getElementById("colorchoice").value];
 	
 String.prototype.replaceArray = function(find, replace) {
   var replaceString = this;
