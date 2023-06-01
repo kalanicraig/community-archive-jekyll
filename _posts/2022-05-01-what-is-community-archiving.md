@@ -16,5 +16,6 @@ One form of community archiving is a History Harvest, which ask community member
 Curious about community-archiving practices? Find out more at these sites.
 
 - [Remembering Freedom: Longtown and Greenville History Harvest](https://longtownhistory.github.io)
-- Fall 2019 History Harvest: [Identity Through Objects](https://historyharvest.indiana.edu/Fall2019/)
-- Spring 2019 History Harvest: [A first-year research experience](https://dighist.indiana.edu/historyharvest/)
+- Fall 2019 History Harvest, Indiana University Bloomington: [Identity Through Objects](https://historyharvest.indiana.edu/Fall2019/)
+- Spring 2019 History Harvest, Indiana University Bloomington: [A first-year research experience](https://dighist.indiana.edu/historyharvest/)
+- [History Harvest Community](https://historyharvest.net), University of Nebraska

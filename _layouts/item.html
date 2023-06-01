@@ -44,11 +44,16 @@ format: item
 
 {{ content }}
 
-			<!--page-->
+{% capture ItemImagePath %}{{ urlitemimg }}{{ ItemID }}{% endcapture %}
+{% for static_file in site.static_files %}
+{% if static_file.path contains ItemImagePath %}
+{% unless static_file.path contains '_th' %}
+{% capture ItemPhotoResult %}{{site.baseurl}}{{static_file.path}}{% endcapture %}
+<img class="featured-image img-fluid" src="{{ ItemPhotoResult }}" alt="{{ page.title }}">
+{% endunless %}
+{% endif %}
+{% endfor %}
 
-<!--{% assign sortedCategories = page.categories | sort %}{% for category in sortedCategories %}
-- {{ category }} (url = {{site.baseurl}}/groups#{{ category | replace: " ","-" }})
-{% endfor %}-->
 
 <div class="element-set">
 <h2 id="Dublin Core">More about this item</h2>

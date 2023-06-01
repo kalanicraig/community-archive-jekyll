@@ -2,7 +2,6 @@
 
 [![LICENSE](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue)](https://raw.githubusercontent.com/kalanicraig/community-archive/main/LICENSE)
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
-[![Ruby gem](https://img.shields.io/gem/v/minimal-mistakes-jekyll.svg)](https://rubygems.org/gems/minimal-mistakes-jekyll)
 
 This repository provides a web site theme for communities in need of a free, easy-to-configure online exhibit.
 
@@ -13,7 +12,7 @@ The easiest way to use this theme is to fork the example site at [https://github
 [1]: https://idahatiu.github.io
 [2]: screenshot.png (live preview)
 
-![layout examples](screenshot-layouts.png)
+![color examples](/assets/img/CommunityArchiveColors.jpg)
 
 The `_config.yml` file contains settings for exhibit info, font, and color choices that affect the entire web site.
 
@@ -56,9 +55,9 @@ Additional sample posts are available under [posts archive][year-archive] on the
 
 - [Github](http://github.com/)
 - [Jekyll](http://jekyllrb.com/)
-- [Foundation](http://foundation.zurb.com/)
+- [Foundation](http://foundation.zurb.com/) (for responsive framework)
 - [Font Awesome](http://fontawesome.io/)
 - [Google Fonts](http://fonts.google.com/)
 - [Coolors](https://coolors.co)
-- [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)
+- [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) (for theme-doc examples)
 - [Shields.io](https://shields.io/category/coverage)

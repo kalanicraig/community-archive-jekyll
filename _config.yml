@@ -1,8 +1,8 @@
 # NEEDS SOME INTRO: A "Why are we here" section
 
-# THEME. Leave Lines 1-3 alone.
+# THEME.
 #---------------------
-#remote-theme: community-archive
+#remote-theme: community-archive-jekyll
 
 ##############################################
 # WHAT IS ALL THIS STUFF?
@@ -67,14 +67,14 @@ instagram : kalanicraig
 
 # If you need to know how many people visit your site, go to https://analytics.google.com/
 # When you finish the setup assistant, it will give you a Measurement ID: G-ABCDEFGHIJ
-google_g4_analytics_id: 
+google_g4_analytics_id: G-LVREG1Y1DT
 
 ##############################################
 # FONTS AND COLORS
 #---------------------
 
 # Choose the FONTS you'd like to use.
-# You can see these font choices in action at https://kalanicraig.com/community-archive/docs/
+# You can see these font choices in action at https://community-archive.kalanicraig.com/docs/
 # Uncomment the line for the font you like. Comment out all of the other lines.
 
 #fontchoice: archivonarrow # A narrow sans-serif font for headlines and body text
@@ -86,7 +86,7 @@ google_g4_analytics_id:
 fontchoice: source # A modern serif font with clean sans-serif accents
 
 # Choose the COLORS you'd like to use.
-# You can see these color choices in action at https://kalanicraig.com/community-archive/docs/
+# You can see these color choices in action at https://community-archive.kalanicraig.com/docs/
 # Uncomment the line for the color you like. Comment out all of the other lines.
 
 #colorchoice: dusk # Dusky purple and olive green
@@ -152,7 +152,6 @@ permalink: /:categories/:year/:month/:day/:title:output_ext
 markdown : kramdown
 syntax_highlighter: rouge
 
-# This URL points directly to the images directory. It needs a slash at the end.
 exclude :
     - Gemfile
     - Gemfile.lock
