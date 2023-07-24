@@ -13,7 +13,7 @@
           {% if post.image %}<img class="thumbnail" src="{{ site.baseurl }}{{ site.urlimg }}{{ post.image }}" alt="">{% endif %}
         </a>
         <div class="post-text">
-          <a href="{{ site.url }}{{ post.url }}">
+          <a href="{{ site.baseurl }}{{ post.url }}">
             <h3 class="post-title card-title accentbg">{{ post.title }}</h3>
           </a>
           <div class="post-meta">
@@ -24,7 +24,7 @@
           </div>
           <div class="post-summary">
             <p>{{ post.excerpt | strip_html | truncatewords:30 }} 
-              <a href="{ site.url }}{{ post.url }}" class="post-read-more">Read more<span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>
+              <a href="{{ site.baseurl }}{{ post.url }}" class="post-read-more">Read more<span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>
             </p>
           </div>
         </div>
@@ -34,7 +34,3 @@
     </section>
   </div>
 </div>
-
-
-
-
