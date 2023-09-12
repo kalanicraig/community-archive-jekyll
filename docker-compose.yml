@@ -4,7 +4,7 @@ services:
   jekyll:
     image: jekyll/jekyll:latest
     command: >
-      sh -c "gem install jekyll-seo-tag jekyll-sitemap jemoji &&
+      sh -c "gem install jekyll-seo-tag jekyll-sitemap jemoji webrick &&
              jekyll build &&
              jekyll serve --watch --force_polling --verbose"
     ports:
