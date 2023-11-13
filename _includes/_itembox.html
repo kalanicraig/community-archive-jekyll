@@ -13,11 +13,12 @@
 
 	{% if item.itemphoto %}
 		{% assign ItemPhotoResult = item.photo %}
-	{% else %}
+	{% elsif ItemImagePath %}
 		{% capture ItemImagePath %}{{ urlitemimg }}{{ ItemID }}{% endcapture %}
 		{% for static_file in site.static_files %}
 			{% if static_file.path contains ItemImagePath %}
 				{% capture ItemPhotoResult %}{{site.baseurl}}{{static_file.path}}{% endcapture %}
+				{% break %}
 			{% endif %}
 		{% endfor %}
 	{% endif %}
